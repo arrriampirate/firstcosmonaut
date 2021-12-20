@@ -1,0 +1,27 @@
+---
+layout: base.njk
+---
+<div class="posts">
+    {% for post in posts %}
+        {% set league = leagues[post.league] %}
+
+        <div
+            class="post"
+            data-league="{{ post.league }}"
+        >
+            <div class="post-info">
+                <div class="post-title">{{ post.title }}</div>
+                <div class="post-league">{{ league.name }}</div>
+                <div class="post-result">{{ post.result }}</div>
+                <div class="post-text">{{ post.text }}</div>
+                <time class="postlist-date" datetime="">{{ post.date | htmlDateString }}</time>
+            </div>
+            <div class="post-content">
+                {% for image in post.images %}
+                    <img class="post-image" src="{{ image }}" alt=""/>
+                {% endfor %}
+            </div>
+        </div>
+
+    {% endfor %}
+</div>

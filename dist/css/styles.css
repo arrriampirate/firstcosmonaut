@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.posts {
+    max-width: 1240px;
+    margin: auto;
+}
+
+.post {
+    display: flex;
+    align-items: flex-start;
+}
+
+.post-info {
+    flex-shrink: 0;
+    width: 200px;
+    padding-right: 24px;
+    text-align: right;
+}
+
+.post-title {
+    font-size: 20px;
+}
+
+.post-image {
+    max-width: 300px;
+    object-fit: cover;
+}

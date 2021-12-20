@@ -1,0 +1,28 @@
+[
+    {
+        "id": 10,
+        "date": "2010-02-17",
+        "title": "Музыкальный фестиваль",
+        "league": "barnaul",
+        "text": "Какой-то рандомный текст про игру",
+        "result": "1-е место",
+        "images": [
+            "https://sun9-66.userapi.com/impg/YXPX2rr0P0An1NJ2xsj4aQwtAiKjKenQK2R8rQ/pa9zl1bgjVU.jpg?size=1920x1273&quality=96&sign=5db36c29930db9d9ede39c281f119b5d&type=album",
+            "https://sun9-4.userapi.com/impg/CKbYdDI2rsKPihRqmxJReIwbtg_7soiJQjf0_w/ljgodBvpeSY.jpg?size=2560x1697&quality=96&sign=f2d50c6cba80fe399c6230444055a6b6&type=album"
+        ],
+        "youtube": "RtFBIwUTYEY"
+    },
+    {
+        "id": 20,
+        "date": "2010-04-23",
+        "title": "Полуфинал",
+        "league": "altay",
+        "text": "Какой-то рандомный текст про игру",
+        "result": "2-е место",
+        "images": [
+            "https://sun9-66.userapi.com/impg/YXPX2rr0P0An1NJ2xsj4aQwtAiKjKenQK2R8rQ/pa9zl1bgjVU.jpg?size=1920x1273&quality=96&sign=5db36c29930db9d9ede39c281f119b5d&type=album",
+            "https://sun9-4.userapi.com/impg/CKbYdDI2rsKPihRqmxJReIwbtg_7soiJQjf0_w/ljgodBvpeSY.jpg?size=2560x1697&quality=96&sign=f2d50c6cba80fe399c6230444055a6b6&type=album"
+        ],
+        "youtube": "RtFBIwUTYEY"
+    }
+]
