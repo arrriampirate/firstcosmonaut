@@ -1,3 +1,6 @@
+const CleanCSS = require('clean-css')
+const htmlmin = require("html-minifier")
+
 module.exports = function(eleventyConfig) {
 
 	// https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
@@ -7,12 +10,29 @@ module.exports = function(eleventyConfig) {
 			month: 'long',
 			day: 'numeric',
 			timeZone: 'UTC'
-		  }).format(new Date(date));
+		  }).format(new Date(date))
 	});
 
 	// Copy the `img` and `css` folders to the output
-	eleventyConfig.addPassthroughCopy("img");
-  	eleventyConfig.addPassthroughCopy("css");
+	eleventyConfig.addPassthroughCopy('img')
+  	eleventyConfig.addPassthroughCopy('css')
+
+	// Inline minified CSS
+	eleventyConfig.addFilter('cssmin', (code) => {
+		return new CleanCSS({}).minify(code).styles
+	});
+
+	// Minify HTML Output
+	eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
+		if (outputPath && outputPath.endsWith('.html')) {
+			return htmlmin.minify(content, {
+				useShortDoctype: true,
+				removeComments: true,
+				collapseWhitespace: true,
+			})
+		}
+		return content
+	})
 
 	return {
 		dir: {
@@ -24,4 +44,4 @@ module.exports = function(eleventyConfig) {
 		},
 		templateFormats: ['njk'],
 	}
-};
+}
