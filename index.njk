@@ -11,14 +11,28 @@ layout: base.njk
         >
             <div class="post-info">
                 <div class="post-title">{{ post.title }}</div>
-                <div class="post-league">{{ league.name }}</div>
-                <div class="post-result">{{ post.result }}</div>
-                <div class="post-text">{{ post.text }}</div>
-                <time class="postlist-date" datetime="">{{ post.date | htmlDateString }}</time>
+                {% if post.league %}
+                    <div class="post-league">{{ league.name }}</div>
+                {% endif %}
+                {% if post.date %}
+                    <time class="post-date" datetime="">{{ post.date | htmlDateString }}</time>
+                {% endif %}
+                {% if post.result %}
+                    <div class="post-result">{{ post.result }}</div>
+                {% endif %}
+                {% if post.text %}
+                    <div class="post-text">{{ post.text }}</div>
+                {% endif %}
             </div>
-            <div class="post-content">
-                {% for image in post.images %}
-                    <img class="post-image" src="{{ image }}" alt=""/>
+            <div class="post-content grid-{{ post.media | length }}">
+                {% for media in post.media %}
+                    {% if media.type == 'youtube' %}
+                        <div class="post-media">
+                            <img class="post-image" src="https://img.youtube.com/vi/{{ media.src }}/0.jpg" alt=""/>
+                        </div>
+                    {% elif media.type == 'image' %}
+                        <img class="post-image" src="{{ media.src }}" alt=""/>
+                    {% endif %}
                 {% endfor %}
             </div>
         </div>

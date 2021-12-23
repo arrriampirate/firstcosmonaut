@@ -1,55 +1,139 @@
 [
     {
-        "id": 10,
-        "date": "2010-02-17",
+        "date": "2011-02-19",
+        "title": "Кубок избирателя",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "Gu_WuT360N8"
+            },
+            {
+                "type": "youtube",
+                "src": "eCePY2ulW6k"
+            }
+        ]
+    },
+    {
+        "date": "2010-12-15",
+        "title": "Полуфинал",
+        "league": "agau",
+        "text": "",
+        "result": "1-е место",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "OpSFgfVmqRM"
+            },
+            {
+                "type": "youtube",
+                "src": "Lt7-gtBEAWA"
+            }
+        ]
+    },
+    {
+        "date": "2010-10-21",
+        "title": "Музыкальный фестиваль",
+        "league": "agau",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "oN0UODZbwCs"
+            }
+        ]
+    },
+    {
+        "date": "2010-10-16",
         "title": "Музыкальный фестиваль",
         "league": "barnaul",
-        "text": "Какой-то рандомный текст про игру",
-        "result": "1-е место",
-        "images": [
-            "https://sun9-66.userapi.com/impg/YXPX2rr0P0An1NJ2xsj4aQwtAiKjKenQK2R8rQ/pa9zl1bgjVU.jpg?size=1920x1273&quality=96&sign=5db36c29930db9d9ede39c281f119b5d&type=album",
-            "https://sun9-4.userapi.com/impg/CKbYdDI2rsKPihRqmxJReIwbtg_7soiJQjf0_w/ljgodBvpeSY.jpg?size=2560x1697&quality=96&sign=f2d50c6cba80fe399c6230444055a6b6&type=album",
-            "https://sun9-66.userapi.com/impg/YXPX2rr0P0An1NJ2xsj4aQwtAiKjKenQK2R8rQ/pa9zl1bgjVU.jpg?size=1920x1273&quality=96&sign=5db36c29930db9d9ede39c281f119b5d&type=album",
-            "https://sun9-4.userapi.com/impg/CKbYdDI2rsKPihRqmxJReIwbtg_7soiJQjf0_w/ljgodBvpeSY.jpg?size=2560x1697&quality=96&sign=f2d50c6cba80fe399c6230444055a6b6&type=album",
-            "https://sun9-66.userapi.com/impg/YXPX2rr0P0An1NJ2xsj4aQwtAiKjKenQK2R8rQ/pa9zl1bgjVU.jpg?size=1920x1273&quality=96&sign=5db36c29930db9d9ede39c281f119b5d&type=album",
-            "https://sun9-4.userapi.com/impg/CKbYdDI2rsKPihRqmxJReIwbtg_7soiJQjf0_w/ljgodBvpeSY.jpg?size=2560x1697&quality=96&sign=f2d50c6cba80fe399c6230444055a6b6&type=album",
-            "https://sun9-66.userapi.com/impg/YXPX2rr0P0An1NJ2xsj4aQwtAiKjKenQK2R8rQ/pa9zl1bgjVU.jpg?size=1920x1273&quality=96&sign=5db36c29930db9d9ede39c281f119b5d&type=album",
-            "https://sun9-4.userapi.com/impg/CKbYdDI2rsKPihRqmxJReIwbtg_7soiJQjf0_w/ljgodBvpeSY.jpg?size=2560x1697&quality=96&sign=f2d50c6cba80fe399c6230444055a6b6&type=album"
-        ],
-        "youtube": "RtFBIwUTYEY"
+        "text": "",
+        "result": "Малый формат",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "W3zD9sgY5oc"
+            }
+        ]
     },
     {
-        "id": 20,
-        "date": "2010-04-23",
-        "title": "Полуфинал",
-        "league": "altay",
-        "text": "Какой-то рандомный текст про игру",
-        "result": "2-е место",
-        "images": [
-            "https://sun9-66.userapi.com/impg/YXPX2rr0P0An1NJ2xsj4aQwtAiKjKenQK2R8rQ/pa9zl1bgjVU.jpg?size=1920x1273&quality=96&sign=5db36c29930db9d9ede39c281f119b5d&type=album",
-            "https://sun9-4.userapi.com/impg/CKbYdDI2rsKPihRqmxJReIwbtg_7soiJQjf0_w/ljgodBvpeSY.jpg?size=2560x1697&quality=96&sign=f2d50c6cba80fe399c6230444055a6b6&type=album",
-            "https://sun9-66.userapi.com/impg/YXPX2rr0P0An1NJ2xsj4aQwtAiKjKenQK2R8rQ/pa9zl1bgjVU.jpg?size=1920x1273&quality=96&sign=5db36c29930db9d9ede39c281f119b5d&type=album",
-            "https://sun9-4.userapi.com/impg/CKbYdDI2rsKPihRqmxJReIwbtg_7soiJQjf0_w/ljgodBvpeSY.jpg?size=2560x1697&quality=96&sign=f2d50c6cba80fe399c6230444055a6b6&type=album",
-            "https://sun9-66.userapi.com/impg/YXPX2rr0P0An1NJ2xsj4aQwtAiKjKenQK2R8rQ/pa9zl1bgjVU.jpg?size=1920x1273&quality=96&sign=5db36c29930db9d9ede39c281f119b5d&type=album",
-            "https://sun9-4.userapi.com/impg/CKbYdDI2rsKPihRqmxJReIwbtg_7soiJQjf0_w/ljgodBvpeSY.jpg?size=2560x1697&quality=96&sign=f2d50c6cba80fe399c6230444055a6b6&type=album"
-        ],
-        "youtube": "RtFBIwUTYEY"
+        "date": "2010-05-10",
+        "title": "Кубок Мэра",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-9.userapi.com/impf/NLqZTZzUgbnWm2kdEpTkJlfmyCmbLeGY53m_Zg/BLu8z6BUHG0.jpg?size=500x333&quality=96&sign=0093d7cff7795818e7735cbaeaa621df&type=album"
+            }
+        ]
     },
     {
-        "id": 30,
-        "date": "2010-06-23",
+        "date": "2010-04-09",
         "title": "Финал",
-        "league": "altay",
-        "text": "Какой-то рандомный текст про игру",
-        "result": "1-е место",
-        "images": [
-            "https://sun9-66.userapi.com/impg/YXPX2rr0P0An1NJ2xsj4aQwtAiKjKenQK2R8rQ/pa9zl1bgjVU.jpg?size=1920x1273&quality=96&sign=5db36c29930db9d9ede39c281f119b5d&type=album",
-            "https://sun9-4.userapi.com/impg/CKbYdDI2rsKPihRqmxJReIwbtg_7soiJQjf0_w/ljgodBvpeSY.jpg?size=2560x1697&quality=96&sign=f2d50c6cba80fe399c6230444055a6b6&type=album",
-            "https://sun9-66.userapi.com/impg/YXPX2rr0P0An1NJ2xsj4aQwtAiKjKenQK2R8rQ/pa9zl1bgjVU.jpg?size=1920x1273&quality=96&sign=5db36c29930db9d9ede39c281f119b5d&type=album",
-            "https://sun9-4.userapi.com/impg/CKbYdDI2rsKPihRqmxJReIwbtg_7soiJQjf0_w/ljgodBvpeSY.jpg?size=2560x1697&quality=96&sign=f2d50c6cba80fe399c6230444055a6b6&type=album",
-            "https://sun9-66.userapi.com/impg/YXPX2rr0P0An1NJ2xsj4aQwtAiKjKenQK2R8rQ/pa9zl1bgjVU.jpg?size=1920x1273&quality=96&sign=5db36c29930db9d9ede39c281f119b5d&type=album",
-            "https://sun9-4.userapi.com/impg/CKbYdDI2rsKPihRqmxJReIwbtg_7soiJQjf0_w/ljgodBvpeSY.jpg?size=2560x1697&quality=96&sign=f2d50c6cba80fe399c6230444055a6b6&type=album"
-        ],
-        "youtube": "RtFBIwUTYEY"
+        "league": "agtu",
+        "text": "",
+        "result": "4-е место",
+        "images": [],
+        "media": [
+            {
+                "type": "youtube",
+                "src": "mxnEZI9Ee8o"
+            },
+            {
+                "type": "youtube",
+                "src": "lTfmjYtJoW8"
+            }
+        ]
+    },
+    {
+        "date": "2010-04-01",
+        "title": "Финал",
+        "league": "agau",
+        "text": "",
+        "result": "2-е место",
+        "images": [],
+        "media": [
+            {
+                "type": "youtube",
+                "src": "4FBSreFa46I"
+            },
+            {
+                "type": "youtube",
+                "src": "y2G5VS_7uiw"
+            }
+        ]
+    },
+    {
+        "date": "2010-03-01",
+        "title": "Полуфинал",
+        "league": "agtu",
+        "text": "",
+        "result": "3-е место",
+        "images": [],
+        "media": [
+            {
+                "type": "youtube",
+                "src": "HhGtIht6yFQ"
+            }
+        ]
+    },
+    {
+        "date": "2010-02-17",
+        "title": "Полуфинал",
+        "league": "agau",
+        "text": "",
+        "result": "3-е место",
+        "images": [],
+        "media": [
+            {
+                "type": "youtube",
+                "src": "oElxXAzvEYs"
+            }
+        ]
     }
 ]

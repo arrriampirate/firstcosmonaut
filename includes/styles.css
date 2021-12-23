@@ -5,62 +5,83 @@
 }
 
 body {
+    padding-left: 60px;
     font-family: sans-serif;
 }
 
-.posts {
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    background: lightcyan;
+}
+
+main {
     max-width: 1240px;
     margin: auto;
+    padding: 96px 48px;
 }
 
 .post {
     position: relative;
     display: flex;
     align-items: flex-start;
-    padding-bottom: 48px;
-    background: #e8f6fb;
 }
 
-.post::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 284px;
-    width: 2px;
-    height: 100%;
-    background: #000;
-}
-
-.post::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 281px;
-    width: 8px;
-    height: 8px;
-    background: red;
-    border-radius: 50%;
+.post:not(:last-child) {
+    padding-bottom: 96px;
 }
 
 .post-info {
     position: sticky;
-    top: 0;
+    top: 48px;
     flex-shrink: 0;
     width: 260px;
-    margin-right: 48px;
+    margin-right: 24px;
+    padding-right: 24px;
     text-align: right;
 }
 
-.post-title {
-    font: bold 26px/1.2em "PT Sans Serif Caption", sans-serif;
+.post:last-child .post-info::before {
+    bottom: auto;
+    height: 4px;
 }
 
-.post-league {
-    padding-top: 6px;
+.post-title {
+    font: bold 26px/1.2em "RoadRadio", sans-serif;
+}
+
+.post-league,
+.post-date,
+.post-result {
+    font-size: 12px;
+    font-family: "PT Sans Caption";
+    text-transform: lowercase;
+}
+
+.post-media {
+    position: relative;
+    cursor: pointer;
 }
 
 .post-image {
-    max-width: 360px;
+    width: 100%;
     vertical-align: top;
     object-fit: cover;
+}
+
+.post-content {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-1 .post-image,
+.grid-3 .post-image:first-child,
+.grid-5 .post-image:first-child,
+.grid-5 .post-image:last-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
