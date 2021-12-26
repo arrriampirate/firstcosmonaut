@@ -19,8 +19,7 @@ header {
 }
 
 main {
-    max-width: 1240px;
-    margin: auto;
+    max-width: 1600px;
     padding: 96px 48px;
 }
 
@@ -31,17 +30,16 @@ main {
 }
 
 .post:not(:last-child) {
-    padding-bottom: 96px;
+    padding-bottom: 148px;
 }
 
 .post-info {
     position: sticky;
     top: 48px;
     flex-shrink: 0;
-    width: 260px;
-    margin-right: 24px;
-    padding-right: 24px;
-    text-align: right;
+    width: 340px;
+    margin-right: 48px;
+    padding-right: 48px;
 }
 
 .post:last-child .post-info::before {
@@ -50,15 +48,21 @@ main {
 }
 
 .post-title {
-    font: bold 26px/1.2em "RoadRadio", sans-serif;
+    padding-bottom: 12px;
+    font: bold 40px/1.2em "PT Sans Caption", sans-serif;
 }
 
 .post-league,
 .post-date,
 .post-result {
-    font-size: 12px;
+    font-size: 16px;
     font-family: "PT Sans Caption";
     text-transform: lowercase;
+}
+
+.post-result {
+    padding-top: 12px;
+    font-weight: 600;
 }
 
 .post-media {
@@ -66,8 +70,59 @@ main {
     cursor: pointer;
 }
 
+.post-media::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.post-media:hover::before {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.play {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 46px;
+    margin: -23px 0 0 -35px;
+    background-color: #212121;
+    opacity: .8;
+    border-radius: 12px;
+    transition: all .2s cubic-bezier(0,0,.2,1);
+    backface-visibility: hidden;
+}
+
+.play::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 2px;
+    border-style: solid;
+    border-width: 8px 0 8px 15px;
+    border-color: transparent transparent transparent #fff;
+    transform: translate3d(-50%, -50%, 0);
+    backface-visibility: hidden;
+}
+
+.post-media:hover .play {
+    background-color: rgb(231, 28, 28);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
 .post-image {
     width: 100%;
+    border-radius: 20px;
     vertical-align: top;
     object-fit: cover;
 }
@@ -84,4 +139,14 @@ main {
 .grid-5 .post-image:last-child {
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
 }

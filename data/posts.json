@@ -1,5 +1,48 @@
 [
     {
+        "date": "2011-10-15",
+        "title": "Музыкальный фестиваль",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "vex_31oSy0I"
+            }
+        ]
+    },
+    {
+        "date": "2011-05-18",
+        "title": "Кубок ректора",
+        "league": "agau",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "Mm85gezn2oA"
+            }
+        ]
+    },
+    {
+        "date": "2011-04-12",
+        "title": "Финал",
+        "league": "agtu",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "B3vpKz8zMaY"
+            },
+            {
+                "type": "youtube",
+                "src": "d727QV4TZOc"
+            }
+        ]
+    },
+    {
         "date": "2011-02-19",
         "title": "Кубок избирателя",
         "league": "barnaul",

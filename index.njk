@@ -28,14 +28,18 @@ layout: base.njk
                 {% for media in post.media %}
                     {% if media.type == 'youtube' %}
                         <div class="post-media">
-                            <img class="post-image" src="https://img.youtube.com/vi/{{ media.src }}/0.jpg" alt=""/>
+                            <div class="play"></div>
+                            <img loading="lazy" class="post-image" src="https://img.youtube.com/vi/{{ media.src }}/0.jpg" alt=""/>
                         </div>
                     {% elif media.type == 'image' %}
-                        <img class="post-image" src="{{ media.src }}" alt=""/>
+                        <img loading="lazy" class="post-image" src="{{ media.src }}" alt=""/>
                     {% endif %}
                 {% endfor %}
             </div>
         </div>
 
     {% endfor %}
+</div>
+<div class="overlay"></div>
+<div class="modal">
 </div>
