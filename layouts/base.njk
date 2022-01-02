@@ -1,6 +1,9 @@
 {% set css %}
   {% include "styles.css" %}
 {% endset %}
+{% set js %}
+  {% include "scripts.js" %}
+{% endset %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -19,5 +22,8 @@
     <main>
       {{ content | safe }}
     </main>
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
   </body>
 </html>

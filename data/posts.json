@@ -1,5 +1,234 @@
 [
     {
+        "date": "2016-04-01",
+        "title": "1/8 финала",
+        "league": "pervaya",
+        "text": "",
+        "result": "1-е место",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "PMAc3b9gFmA"
+            },
+            {
+                "type": "youtube",
+                "src": "bdpUGSHQcf4"
+            }
+        ]
+    },
+    {
+        "date": "2016-02-26",
+        "title": "Кубок избирателя",
+        "league": "barnaul",
+        "text": "",
+        "result": "1-е место",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "IR-5QZR7Mvk"
+            }
+        ]
+    },
+    {
+        "date": "2015-11-21",
+        "title": "Финал",
+        "league": "altay",
+        "text": "",
+        "result": "1-е место",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "yEkq2zeC9_Y"
+            }
+        ]
+    },
+    {
+        "date": "2015-10-24",
+        "title": "Полуфинал",
+        "league": "altay",
+        "text": "",
+        "result": "2-е место",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "CsLQMV18xRQ"
+            }
+        ]
+    },
+    {
+        "date": "2015-04-25",
+        "title": "Четвертьфинал",
+        "league": "altay",
+        "text": "",
+        "result": "2-е место",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "9YwXwDfmfsA"
+            }
+        ]
+    },
+    {
+        "date": "2015-04-10",
+        "title": "Кубок администрации",
+        "league": "barnaul",
+        "text": "",
+        "result": "Победители",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "5ab5PYSFbt4"
+            }
+        ]
+    },
+    {
+        "date": "2015-03-14",
+        "title": "Фестиваль",
+        "league": "altay",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "UaBLm53G3Ns"
+            }
+        ]
+    },
+    {
+        "date": "2015-02-27",
+        "title": "Кубок избирателя",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "amfyE6y54PA"
+            }
+        ]
+    },
+    {
+        "date": "2014-03-15",
+        "title": "Финал",
+        "league": "barnaul",
+        "text": "",
+        "result": "1-е место",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "Tz_L6-M6ipU"
+            }
+        ]
+    },
+    {
+        "date": "2014-02-15",
+        "title": "Кубок избирателя",
+        "league": "barnaul",
+        "text": "",
+        "result": "Гран-при",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "9cbxtq17mRU"
+            }
+        ]
+    },
+    {
+        "date": "2013-09-20",
+        "title": "Полуфинал",
+        "league": "siberia",
+        "text": "",
+        "result": "4-е место",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "v_cBiSfJQZs"
+            },
+            {
+                "type": "youtube",
+                "src": "grMXTdyXrk4"
+            }
+        ]
+    },
+    {
+        "date": "2013-06-07",
+        "title": "Четвертьфинал",
+        "league": "siberia",
+        "text": "",
+        "result": "5-е место",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "MjhyKnEMfSA"
+            }
+        ]
+    },
+    {
+        "date": "2013-04-13",
+        "title": "Четвертьфинал",
+        "league": "altay",
+        "text": "",
+        "result": "4-е место",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "Ax0nombs8W0"
+            }
+        ]
+    },
+    {
+        "date": "2013-02-16",
+        "title": "Кубок избирателя",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "VgiqPbn9XaI"
+            }
+        ]
+    },
+    {
+        "date": "2012-12-08",
+        "title": "Фестиваль",
+        "league": "siberia",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "uKOt-_WqRHE"
+            }
+        ]
+    },
+    {
+        "date": "2012-03-16",
+        "title": "Финал",
+        "league": "agau",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "2qA3secjLfg"
+            }
+        ]
+    },
+    {
+        "date": "2012-02-19",
+        "title": "Кубок избирателя",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "7Z4pBPhEOfM"
+            }
+        ]
+    },
+    {
         "date": "2011-10-15",
         "title": "Музыкальный фестиваль",
         "league": "barnaul",

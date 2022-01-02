@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "clean-css": "^5.2.2",
-    "html-minifier": "^4.0.0"
+    "html-minifier": "^4.0.0",
+    "terser": "^5.10.0"
   }
 }
