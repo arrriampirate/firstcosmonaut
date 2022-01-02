@@ -27,12 +27,12 @@ layout: base.njk
             <div class="post-content grid-{{ post.media | length }}">
                 {% for media in post.media %}
                     {% if media.type == 'youtube' %}
-                        <div class="post-media" data-action="open-modal" data-type="youtube" data-src="{{ media.src }}">
+                        <div class="post-media" data-action="open-modal" data-src="https://img.youtube.com/vi/{{ media.src }}/0.jpg" data-youtube="{{ media.src }}">
                             <div class="play"></div>
                             <img loading="lazy" class="post-image" src="https://img.youtube.com/vi/{{ media.src }}/0.jpg" alt=""/>
                         </div>
                     {% elif media.type == 'image' %}
-                        <img loading="lazy" class="post-image" src="{{ media.src }}" alt="" data-action="open-modal" data-type="image" data-src="{{ media.src }}"/>
+                        <img loading="lazy" class="post-image" src="{{ media.src }}" alt="" data-action="open-modal" data-src="{{ media.src }}"/>
                     {% endif %}
                 {% endfor %}
             </div>
@@ -42,4 +42,6 @@ layout: base.njk
 </div>
 <div class="overlay" id="overlay" data-action="close-modal"></div>
 <div class="modal-close" id="modal-close" data-action="close-modal"></div>
-<div class="modal" id="modal"></div>
+<div class="modal" id="modal">
+    <iframe id="youtube" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
