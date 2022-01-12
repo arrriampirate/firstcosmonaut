@@ -30,11 +30,10 @@ function openModal(src, youtube) {
     document.body.classList.add('fixed')
 
     setInitialPosition()
-    modalDiv.style.backgroundImage = `url(${src})`
     modalDiv.classList.add('visible', 'animated')
+    modalDiv.style.backgroundImage = `url(${src})`
 
     setTimeout(() => {
-        modalDiv.style = ''
         modalDiv.style.backgroundImage = `url(${src})`
         modalOverlay.classList.add('visible')
         modalClose.classList.add('visible')
@@ -65,7 +64,7 @@ function closeModal() {
         modalDiv.style.backgroundImage = ''
         youtubeFrame.classList.remove('visible')
         youtubeFrame.src = ''
-    }, 300)
+    }, 20)
 }
 
 function setInitialPosition() {
