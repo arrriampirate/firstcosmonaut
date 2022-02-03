@@ -59,12 +59,11 @@ function closeModal() {
     setInitialPosition()
 
     setTimeout(() => {
-        modalDiv.style = ''
-        modalOverlay.classList.remove('animated', 'visible')
+        modalDiv.classList.remove('animated', 'visible')
         modalDiv.style.backgroundImage = ''
         youtubeFrame.classList.remove('visible')
         youtubeFrame.src = ''
-    }, 20)
+    }, 200)
 }
 
 function setInitialPosition() {
@@ -94,7 +93,6 @@ function setImagePosition(src) {
         const left = (winWidth - width) / 2
         const top = (winHeight - height) / 2
 
-        console.log(width, height, left, top)
         modalDiv.style.width = `${width}px`
         modalDiv.style.height = `${height}px`
         modalDiv.style.left = `${left}px`

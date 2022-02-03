@@ -23,63 +23,35 @@ header {
 }
 
 main {
-    max-width: 1600px;
+    max-width: 1270px;
     margin: auto;
     padding: 96px 48px;
 }
 
 .post {
-    position: relative;
     display: flex;
     padding: 74px 0;
 }
 
 .post-info {
-    position: relative;
     flex-shrink: 0;
-    width: 340px;
+    width: 140px;
     margin-right: 48px;
-    padding: 86px 48px 0 0;
-    text-align: right;
 }
 
-.post-info::before {
-    content: "";
-    position: absolute;
-    top: 121px;
-    right: 0;
-    bottom: -256px;
-    width: 1px;
-    background: #000;
-}
-
-.post-info::after {
-    content: "";
-    position: absolute;
-    top: 108px;
-    right: -6px;
-    width: 11px;
-    height: 11px;
-    background: #fff;
-    border: 1px #000 solid;
-    border-radius: 50%;
-}
-
-.post:last-child .post-info::before {
-    display: none;
-}
-
-.post-title {
-    padding-bottom: 12px;
-    font: bold 40px/1.2em "Moscow Sans", sans-serif;
-}
-
+.post-title,
 .post-league,
 .post-date,
 .post-result {
     font-size: 16px;
     font-family: "Moscow Sans";
     text-transform: lowercase;
+}
+
+.post-date {
+    display: block;
+    padding-top: 6px;
+    font-size: 12px;
 }
 
 .post-result {
@@ -237,4 +209,12 @@ main {
 
 .modal-close:hover {
     transform: scale(1.1);
+}
+
+.youtube {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 }

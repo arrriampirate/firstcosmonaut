@@ -1,5 +1,8 @@
 [
     {
+        "isYear": "2020"
+    },
+    {
         "date": "2016-04-01",
         "title": "1/8 финала",
         "league": "pervaya",
@@ -173,6 +176,10 @@
             {
                 "type": "youtube",
                 "src": "Ax0nombs8W0"
+            },
+            {
+                "type": "youtube",
+                "src": "w1UxVYqIpQA"
             }
         ]
     },
@@ -203,6 +210,45 @@
         ]
     },
     {
+        "date": "2012-11-24",
+        "title": "Полуфинал",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-27.userapi.com/impf/iLAc-SEOFHGAnKeAyFBnxyhMIKatUi_GxX_XcA/VPXoeUDbnM0.jpg?size=1280x853&quality=96&sign=ccbed18959e11b9c1c115f45a485a86f&type=album"
+            }
+        ]
+    },
+    {
+        "date": "2012-09-05",
+        "title": "Музыкальный фестиваль",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-65.userapi.com/impf/RtSFYigiEJUMCKgzxshYpGxOmCY3C2odSN7mwA/dskfA-kgNBs.jpg?size=1280x853&quality=96&sign=0bbc093090d672ae1568da549b9f80f7&type=album"
+            }
+        ]
+    },
+    {
+        "date": "2012-03-31",
+        "title": "Кубок администрации",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-87.userapi.com/impf/L-zI4Ecyv3lf8wL-dO4si1k_5aAdTcVwt41JTw/8bWtoDwM9TM.jpg?size=1280x853&quality=96&sign=210665f0b88269729009597de45756e3&type=album"
+            }
+        ]
+    },
+    {
         "date": "2012-03-16",
         "title": "Финал",
         "league": "agau",
@@ -229,6 +275,32 @@
         ]
     },
     {
+        "date": "2012-01-14",
+        "title": "Первый тур",
+        "league": "sochi",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-21.userapi.com/impf/9F22FuAsfIw13Nxdhv5xqqzLKjMVU_B_V8u3aw/J5lw7zNZTjQ.jpg?size=500x335&quality=96&sign=2e4bec11e361e79d27d0a9cae280e72e&type=album"
+            }
+        ]
+    },
+    {
+        "date": "2011-12-17",
+        "title": "Кубок Деда Мороза",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "hRmQ0oT7MbM"
+            }
+        ]
+    },
+    {
         "date": "2011-12-03",
         "title": "Фестиваль",
         "league": "siberia",
@@ -238,6 +310,19 @@
             {
                 "type": "youtube",
                 "src": "52741Gg26gw"
+            }
+        ]
+    },
+    {
+        "date": "2011-11-19",
+        "title": "Полуфинал",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-76.userapi.com/impf/vrg_HMtpIh8dj0swDeOVxOCzAwxiFcRnVtkuyg/8rCeTVuwx_g.jpg?size=1162x775&quality=96&sign=17197c78f18d42501d91fac15aff015f&type=album"
             }
         ]
     },
@@ -281,6 +366,19 @@
             {
                 "type": "youtube",
                 "src": "d727QV4TZOc"
+            }
+        ]
+    },
+    {
+        "date": "2011-04-02",
+        "title": "Кубок мэра",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-39.userapi.com/impf/fBhe8c_1o_zLqWXH2d7f4eUTo6IKLiNy7gGwSg/9gd4DsN7B5Q.jpg?size=1280x854&quality=96&sign=754601ff7c050102615474217c9f85f6&type=album"
             }
         ]
     },

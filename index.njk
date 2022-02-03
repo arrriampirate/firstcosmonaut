@@ -3,45 +3,51 @@ layout: base.njk
 ---
 <div class="posts">
     {% for post in posts %}
-        {% set league = leagues[post.league] %}
+        
+        {% if post.isYear %}
 
-        <div
-            class="post"
-            data-league="{{ post.league }}"
-        >
-            <div class="post-info">
-                <div class="post-title">{{ post.title }}</div>
-                {% if post.league %}
-                    <div class="post-league">{{ league.name }}</div>
-                {% endif %}
-                {% if post.date %}
-                    <time class="post-date" datetime="">{{ post.date | htmlDateString }}</time>
-                {% endif %}
-                {% if post.result %}
-                    <div class="post-result">{{ post.result }}</div>
-                {% endif %}
-                {% if post.text %}
-                    <div class="post-text">{{ post.text }}</div>
-                {% endif %}
+            <div class="year">
+                {{ post.isYear }}
             </div>
-            <div class="post-content grid-{{ post.media | length }}">
-                {% for media in post.media %}
-                    {% if media.type == 'youtube' %}
-                        <div class="post-media" data-action="open-modal" data-src="https://img.youtube.com/vi/{{ media.src }}/0.jpg" data-youtube="{{ media.src }}">
-                            <div class="play"></div>
-                            <img loading="lazy" class="post-image" src="https://img.youtube.com/vi/{{ media.src }}/0.jpg" alt=""/>
-                        </div>
-                    {% elif media.type == 'image' %}
-                        <img loading="lazy" class="post-image single-image" src="{{ media.src }}" alt="" data-action="open-modal" data-src="{{ media.src }}"/>
+
+        {% else %}
+            {% set league = leagues[post.league] %}
+
+            <div
+                class="post"
+                data-league="{{ post.league }}"
+            >
+                <div class="post-info">
+                    <div class="post-title">{{ post.title }}</div>
+                    {% if post.league %}
+                        <div class="post-league">{{ league.name }}</div>
                     {% endif %}
-                {% endfor %}
+                    {% if post.date %}
+                        <time class="post-date" datetime="">{{ post.date | htmlDateString }}</time>
+                    {% endif %}
+                    {% if post.text %}
+                        <div class="post-text">{{ post.text }}</div>
+                    {% endif %}
+                </div>
+                <div class="post-content grid-{{ post.media | length }}">
+                    {% for media in post.media %}
+                        {% if media.type == 'youtube' %}
+                            <div class="post-media" data-action="open-modal" data-src="https://img.youtube.com/vi/{{ media.src }}/0.jpg" data-youtube="{{ media.src }}">
+                                <div class="play"></div>
+                                <img loading="lazy" class="post-image" src="https://img.youtube.com/vi/{{ media.src }}/0.jpg" alt=""/>
+                            </div>
+                        {% elif media.type == 'image' %}
+                            <img loading="lazy" class="post-image single-image" src="{{ media.src }}" alt="" data-action="open-modal" data-src="{{ media.src }}"/>
+                        {% endif %}
+                    {% endfor %}
+                </div>
             </div>
-        </div>
+        {% endif %}
 
     {% endfor %}
 </div>
 <div class="overlay" id="overlay" data-action="close-modal"></div>
 <div class="modal-close" id="modal-close" data-action="close-modal"></div>
 <div class="modal" id="modal">
-    <iframe id="youtube" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="youtube" id="youtube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
