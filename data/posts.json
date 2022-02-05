@@ -3,6 +3,188 @@
         "isYear": "2020"
     },
     {
+        "date": "2018-12-08",
+        "title": "Финал",
+        "league": "altay",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "OSAMbo3FuCw"
+            }
+        ]
+    },
+    {
+        "date": "2018-10-27",
+        "title": "Полуфинал",
+        "league": "altay",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "nQYLxMRQynY"
+            }
+        ]
+    },
+    {
+        "date": "2018-04-24",
+        "title": "Четвертьфинал",
+        "league": "altay",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "Fd3ZhEFBK5Q"
+            }
+        ]
+    },
+    {
+        "date": "2018-02-23",
+        "title": "Фестиваль",
+        "league": "altay",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "6_yfhalLMkE"
+            }
+        ]
+    },
+    {
+        "date": "2017-10-14",
+        "title": "Кубок Вместе Ярче",
+        "league": "altay",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "XqXYLMSAqXc"
+            }
+        ]
+    },
+    {
+        "date": "2017-02-28",
+        "title": "Фестиваль",
+        "league": "altay",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "-U_yp0vuR7s"
+            }
+        ]
+    },
+    {
+        "date": "2017-01-14",
+        "title": "Первый тур",
+        "league": "sochi",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "VSjl0yNqPzw"
+            }
+        ]
+    },
+    {
+        "date": "2016-12-09",
+        "title": "Кубок Деда Мороза",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "eGoa0X4nNmk"
+            }
+        ]
+    },
+    {
+        "date": "2016-12-03",
+        "title": "Финал",
+        "league": "altay",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "XYRlpFtnguc"
+            }
+        ]
+    },
+    {
+        "date": "2016-11-05",
+        "title": "Полуфинал",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "hWDWihjAc3E"
+            }
+        ]
+    },
+    {
+        "date": "2016-10-08",
+        "title": "Музыкальный фестиваль",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "1Pv5DjFLyv0"
+            }
+        ]
+    },
+    {
+        "date": "2016-10-01",
+        "title": "Полуфинал",
+        "league": "altay",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "TpnwJYAOl_w"
+            }
+        ]
+    },
+    {
+        "date": "2016-04-23",
+        "title": "Четвертьфинал",
+        "league": "altay",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "6_sVU4TJryY"
+            }
+        ]
+    },
+    {
+        "date": "2016-04-16",
+        "title": "Кубок администрации",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "9GGHyvizbBQ"
+            }
+        ]
+    },
+    {
         "date": "2016-04-01",
         "title": "1/8 финала",
         "league": "pervaya",
@@ -20,15 +202,71 @@
         ]
     },
     {
+        "date": "2016-03-19",
+        "title": "Финал",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "text",
+                "src": "TODO найти видео"
+            }
+        ]
+    },
+    {
         "date": "2016-02-26",
         "title": "Кубок избирателя",
         "league": "barnaul",
         "text": "",
-        "result": "1-е место",
+        "result": "",
         "media": [
             {
                 "type": "youtube",
+                "src": "-qVaK50Svlg"
+            },
+            {
+                "type": "youtube",
                 "src": "IR-5QZR7Mvk"
+            }
+        ]
+    },
+    {
+        "date": "2016-02-20",
+        "title": "Фестиваль",
+        "league": "altay",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "6WyneWxeOFU"
+            }
+        ]
+    },
+    {
+        "date": "2016-01-15",
+        "title": "Второй тур",
+        "league": "sochi",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-69.userapi.com/impf/c630919/v630919050/106aa/gySN8vytimQ.jpg?size=600x359&quality=96&sign=4d41554b12d114d7e43c026d348b9bdb&type=album"
+            }
+        ]
+    },
+    {
+        "date": "2015-12-12",
+        "title": "Кубок Деда мороза",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "FBQyT5iU3ds"
             }
         ]
     },
@@ -59,6 +297,32 @@
         ]
     },
     {
+        "date": "2015-09-26",
+        "title": "Кубок Избиркома",
+        "league": "altay",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "hq5s-UUY_7k"
+            }
+        ]
+    },
+    {
+        "date": "2015-06-12",
+        "title": "Четвертьфинал",
+        "league": "asia",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-31.userapi.com/impf/c622627/v622627165/3d444/3KphX7UhyY4.jpg?size=1280x853&quality=96&sign=4439d3255dbbef91f8ac25651ea60607&type=album"
+            }
+        ]
+    },
+    {
         "date": "2015-04-25",
         "title": "Четвертьфинал",
         "league": "altay",
@@ -81,6 +345,19 @@
             {
                 "type": "youtube",
                 "src": "5ab5PYSFbt4"
+            }
+        ]
+    },
+    {
+        "date": "2015-03-21",
+        "title": "Финал",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "eM2tq4s9s98"
             }
         ]
     },
@@ -111,6 +388,110 @@
         ]
     },
     {
+        "date": "2015-01-14",
+        "title": "Первый тур",
+        "league": "sochi",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-69.userapi.com/impf/c622928/v622928050/1f089/fsGyMEpMXWk.jpg?size=800x532&quality=96&sign=ef4355ed50d6e22bc312aef6a5928564&type=album"
+            }
+        ]
+    },
+    {
+        "date": "2014-12-13",
+        "title": "Кубок Деда Мороза",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "Fe45vRtRDeM"
+            }
+        ]
+    },
+    {
+        "date": "2014-11-21",
+        "title": "Полуфинал",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-65.userapi.com/impf/c623726/v623726050/da4c/8ta7HkXe5Lo.jpg?size=1280x853&quality=96&sign=8b233c0a361b7e8264603c65b215a937&type=album"
+            }
+        ]
+    },
+    {
+        "date": "2014-10-11",
+        "title": "Музыкальный фестиваль",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-21.userapi.com/impf/uNr2-3lgv9kq_-6hO94HN9196wngkX8GPuzbYg/SyItuXDHe44.jpg?size=1280x853&quality=96&sign=42d43ff2b267446d7eeec33b5d1b3dd1&type=album"
+            }
+        ]
+    },
+    {
+        "date": "2014-09-30",
+        "title": "Полуфинал",
+        "league": "asia",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-64.userapi.com/impf/c623727/v623727050/d9b4/NB9EEWyRm6s.jpg?size=650x433&quality=96&sign=6a02dd03cc6fa2817d38b25a6d65eb45&type=album"
+            }
+        ]
+    },
+    {
+        "date": "2014-05-29",
+        "title": "Четвертьфинал",
+        "league": "asia",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-9.userapi.com/impf/s-j8cBQk2PxrmIXPTGGM4CMe_nz142PcHxTm0w/E6p6RFEMq7E.jpg?size=650x433&quality=96&sign=020fd899ed938aff45f1d5d57a015734&type=album"
+            }
+        ]
+    },
+    {
+        "date": "2014-04-19",
+        "title": "Кубок Администрации",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-61.userapi.com/impf/vLCAavE1dQBkAoPd5UI1ATV_nqniGNLSc-dbCg/nn-kKvle3yY.jpg?size=1280x853&quality=96&sign=996d5bc351c14cd7949af6ac6a0df94f&type=album"
+            }
+        ]
+    },
+    {
+        "date": "2014-03-18",
+        "title": "Фестиваль",
+        "league": "asia",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-13.userapi.com/impf/tug4tlelOUSABp-vM4T2Iyd_tqcURWGr-XQreA/8mmNcZb9FgQ.jpg?size=650x433&quality=96&sign=1d983f18ffd8e07de10821a0e0bde6af&type=album"
+            }
+        ]
+    },
+    {
         "date": "2014-03-15",
         "title": "Финал",
         "league": "barnaul",
@@ -137,6 +518,97 @@
         ]
     },
     {
+        "date": "2013-12-15",
+        "title": "Первый тур",
+        "league": "sochi",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "gRGc8-hPhKA"
+            }
+        ]
+    },
+    {
+        "date": "2013-12-07",
+        "title": "Кубок Деда Мороза",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "RY4mP90PnGY"
+            }
+        ]
+    },
+    {
+        "date": "2013-11-29",
+        "title": "Финал",
+        "league": "next",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "text",
+                "src": "TODO Видео было когда-то на торрентах. Поищи еще"
+            }
+        ]
+    },
+    {
+        "date": "2013-11-23",
+        "title": "Финал",
+        "league": "altay",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "q6e3bjPFGUc"
+            }
+        ]
+    },
+    {
+        "date": "2013-11-09",
+        "title": "Полуфинал",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "youtube",
+                "src": "QE6ppRG27X0"
+            }
+        ]
+    },
+    {
+        "date": "2013-10-12",
+        "title": "Музыкальный фестиваль",
+        "league": "barnaul",
+        "text": "",
+        "result": "",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-31.userapi.com/impf/c301609/v301609452/45f3/2pyCDYfrdR0.jpg?size=1280x853&quality=96&sign=ac111903cec029511d22205e16385317&type=album"
+            }
+        ]
+    },
+    {
+        "date": "2013-09-28",
+        "title": "Полуфинал",
+        "league": "altay",
+        "text": "",
+        "result": "1-е место",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-15.userapi.com/impf/41KSWkSwcNphYVXaGoc6q8WsuNq_kSKI1igfWA/7Ymyw4ttAig.jpg?size=1280x853&quality=96&sign=ab6893933ffb2544c2e05f4d9fede433&type=album"
+            }
+        ]
+    },
+    {
         "date": "2013-09-20",
         "title": "Полуфинал",
         "league": "siberia",
@@ -154,6 +626,19 @@
         ]
     },
     {
+        "date": "2013-09-13",
+        "title": "Полуфинал",
+        "league": "next",
+        "text": "",
+        "result": "1-е место",
+        "media": [
+            {
+                "type": "text",
+                "src": "Пауль обещал сесть жопой на фонтан, если мы займем первое место. Мы заняли первое место. Все еще не сел."
+            }
+        ]
+    },
+    {
         "date": "2013-06-07",
         "title": "Четвертьфинал",
         "league": "siberia",
@@ -167,6 +652,19 @@
         ]
     },
     {
+        "date": "2013-04-22",
+        "title": "Кубок администрации",
+        "league": "barnaul",
+        "text": "",
+        "result": "4-е место",
+        "media": [
+            {
+                "type": "image",
+                "src": "https://sun9-87.userapi.com/impf/zabN_dxM_dDWbUTuBCOGYSemDpcoSNmXhT5NKw/NXFPUqbIM4Y.jpg?size=1280x850&quality=96&sign=440d2a633818d428a1633e4fbad93937&type=album"
+            }
+        ]
+    },
+    {
         "date": "2013-04-13",
         "title": "Четвертьфинал",
         "league": "altay",
@@ -175,7 +673,7 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "Ax0nombs8W0"
+                "src": "Od4Aey0zN3o"
             },
             {
                 "type": "youtube",
@@ -321,8 +819,8 @@
         "result": "",
         "media": [
             {
-                "type": "image",
-                "src": "https://sun9-76.userapi.com/impf/vrg_HMtpIh8dj0swDeOVxOCzAwxiFcRnVtkuyg/8rCeTVuwx_g.jpg?size=1162x775&quality=96&sign=17197c78f18d42501d91fac15aff015f&type=album"
+                "type": "youtube",
+                "src": "hKEV6IoMYyI"
             }
         ]
     },

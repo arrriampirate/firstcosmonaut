@@ -218,3 +218,10 @@ main {
     width: 100vw;
     height: 100vh;
 }
+
+.text {
+    font-family: "PT Serif Caption";
+    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
+}

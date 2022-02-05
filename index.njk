@@ -38,6 +38,8 @@ layout: base.njk
                             </div>
                         {% elif media.type == 'image' %}
                             <img loading="lazy" class="post-image single-image" src="{{ media.src }}" alt="" data-action="open-modal" data-src="{{ media.src }}"/>
+                        {% elif media.type == 'text' %}
+                            <div class="text">{{ media.src }}</div>
                         {% endif %}
                     {% endfor %}
                 </div>
