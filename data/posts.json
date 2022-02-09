@@ -1,8 +1,5 @@
 [
     {
-        "isYear": "2020"
-    },
-    {
         "date": "2018-12-08",
         "title": "Финал",
         "league": "altay",
@@ -11,7 +8,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "OSAMbo3FuCw"
+                "src": "OSAMbo3FuCw",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -24,7 +22,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "nQYLxMRQynY"
+                "src": "nQYLxMRQynY",
+                "resolution": "hqdefault"
             }
         ]
     },
@@ -37,7 +36,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "Fd3ZhEFBK5Q"
+                "src": "Fd3ZhEFBK5Q",
+                "resolution": "hqdefault"
             }
         ]
     },
@@ -50,7 +50,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "6_yfhalLMkE"
+                "src": "6_yfhalLMkE",
+                "resolution": "sddefault"
             }
         ]
     },
@@ -63,7 +64,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "XqXYLMSAqXc"
+                "src": "XqXYLMSAqXc",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -76,7 +78,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "-U_yp0vuR7s"
+                "src": "-U_yp0vuR7s",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -89,7 +92,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "VSjl0yNqPzw"
+                "src": "VSjl0yNqPzw",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -102,7 +106,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "eGoa0X4nNmk"
+                "src": "eGoa0X4nNmk",
+                "resolution": "hqdefault"
             }
         ]
     },
@@ -115,7 +120,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "XYRlpFtnguc"
+                "src": "XYRlpFtnguc",
+                "resolution": "hqdefault"
             }
         ]
     },
@@ -128,7 +134,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "hWDWihjAc3E"
+                "src": "hWDWihjAc3E",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -141,7 +148,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "1Pv5DjFLyv0"
+                "src": "1Pv5DjFLyv0",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -154,7 +162,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "TpnwJYAOl_w"
+                "src": "TpnwJYAOl_w",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -167,7 +176,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "6_sVU4TJryY"
+                "src": "6_sVU4TJryY",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -180,7 +190,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "9GGHyvizbBQ"
+                "src": "9GGHyvizbBQ",
+                "resolution": "hqdefault"
             }
         ]
     },
@@ -193,11 +204,13 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "PMAc3b9gFmA"
+                "src": "PMAc3b9gFmA",
+                "resolution": "maxresdefault"
             },
             {
                 "type": "youtube",
-                "src": "bdpUGSHQcf4"
+                "src": "bdpUGSHQcf4",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -210,7 +223,7 @@
         "media": [
             {
                 "type": "text",
-                "src": "TODO найти видео"
+                "src": "Тут была игра, в которой Панова уносил птеродактиль, а Динара танцевала стрип."
             }
         ]
     },
@@ -223,11 +236,13 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "-qVaK50Svlg"
+                "src": "-qVaK50Svlg",
+                "resolution": "maxresdefault"
             },
             {
                 "type": "youtube",
-                "src": "IR-5QZR7Mvk"
+                "src": "IR-5QZR7Mvk",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -240,7 +255,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "6WyneWxeOFU"
+                "src": "6WyneWxeOFU",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -266,7 +282,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "FBQyT5iU3ds"
+                "src": "FBQyT5iU3ds",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -279,7 +296,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "yEkq2zeC9_Y"
+                "src": "yEkq2zeC9_Y",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -292,7 +310,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "CsLQMV18xRQ"
+                "src": "CsLQMV18xRQ",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -305,7 +324,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "hq5s-UUY_7k"
+                "src": "hq5s-UUY_7k",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -331,7 +351,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "9YwXwDfmfsA"
+                "src": "9YwXwDfmfsA",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -344,7 +365,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "5ab5PYSFbt4"
+                "src": "5ab5PYSFbt4",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -357,7 +379,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "eM2tq4s9s98"
+                "src": "eM2tq4s9s98",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -370,7 +393,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "UaBLm53G3Ns"
+                "src": "UaBLm53G3Ns",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -383,7 +407,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "amfyE6y54PA"
+                "src": "amfyE6y54PA",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -409,7 +434,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "Fe45vRtRDeM"
+                "src": "Fe45vRtRDeM",
+                "resolution": "sddefault"
             }
         ]
     },
@@ -500,7 +526,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "Tz_L6-M6ipU"
+                "src": "Tz_L6-M6ipU",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -513,7 +540,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "9cbxtq17mRU"
+                "src": "9cbxtq17mRU",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -526,7 +554,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "gRGc8-hPhKA"
+                "src": "gRGc8-hPhKA",
+                "resolution": "hqdefault"
             }
         ]
     },
@@ -539,7 +568,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "RY4mP90PnGY"
+                "src": "RY4mP90PnGY",
+                "resolution": "hqdefault"
             }
         ]
     },
@@ -551,8 +581,9 @@
         "result": "",
         "media": [
             {
-                "type": "text",
-                "src": "TODO Видео было когда-то на торрентах. Поищи еще"
+                "type": "youtube",
+                "src": "UjhK6qmOHmI",
+                "resolution": "hqdefault"
             }
         ]
     },
@@ -565,7 +596,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "q6e3bjPFGUc"
+                "src": "q6e3bjPFGUc",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -578,7 +610,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "QE6ppRG27X0"
+                "src": "QE6ppRG27X0",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -617,11 +650,13 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "v_cBiSfJQZs"
+                "src": "v_cBiSfJQZs",
+                "resolution": "hqdefault"
             },
             {
                 "type": "youtube",
-                "src": "grMXTdyXrk4"
+                "src": "grMXTdyXrk4",
+                "resolution": "sddefault"
             }
         ]
     },
@@ -647,7 +682,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "MjhyKnEMfSA"
+                "src": "MjhyKnEMfSA",
+                "resolution": "sddefault"
             }
         ]
     },
@@ -673,11 +709,13 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "Od4Aey0zN3o"
+                "src": "Od4Aey0zN3o",
+                "resolution": "maxresdefault"
             },
             {
                 "type": "youtube",
-                "src": "w1UxVYqIpQA"
+                "src": "w1UxVYqIpQA",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -690,7 +728,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "VgiqPbn9XaI"
+                "src": "VgiqPbn9XaI",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -703,7 +742,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "uKOt-_WqRHE"
+                "src": "uKOt-_WqRHE",
+                "resolution": "sddefault"
             }
         ]
     },
@@ -755,7 +795,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "2qA3secjLfg"
+                "src": "2qA3secjLfg",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -768,7 +809,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "7Z4pBPhEOfM"
+                "src": "7Z4pBPhEOfM",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -794,7 +836,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "hRmQ0oT7MbM"
+                "src": "hRmQ0oT7MbM",
+                "resolution": "hqdefault"
             }
         ]
     },
@@ -807,7 +850,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "52741Gg26gw"
+                "src": "52741Gg26gw",
+                "resolution": "hqdefault"
             }
         ]
     },
@@ -820,7 +864,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "hKEV6IoMYyI"
+                "src": "hKEV6IoMYyI",
+                "resolution": "maxresdefault"
             }
         ]
     },
@@ -833,7 +878,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "vex_31oSy0I"
+                "src": "vex_31oSy0I",
+                "resolution": "sddefault"
             }
         ]
     },
@@ -846,7 +892,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "Mm85gezn2oA"
+                "src": "Mm85gezn2oA",
+                "resolution": "sddefault"
             }
         ]
     },
@@ -859,11 +906,13 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "B3vpKz8zMaY"
+                "src": "B3vpKz8zMaY",
+                "resolution": "maxresdefault"
             },
             {
                 "type": "youtube",
-                "src": "d727QV4TZOc"
+                "src": "d727QV4TZOc",
+                "resolution": "hqdefault"
             }
         ]
     },
@@ -889,11 +938,13 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "Gu_WuT360N8"
+                "src": "Gu_WuT360N8",
+                "resolution": "sddefault"
             },
             {
                 "type": "youtube",
-                "src": "eCePY2ulW6k"
+                "src": "eCePY2ulW6k",
+                "resolution": "hqdefault"
             }
         ]
     },
@@ -906,11 +957,13 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "OpSFgfVmqRM"
+                "src": "OpSFgfVmqRM",
+                "resolution": "sddefault"
             },
             {
                 "type": "youtube",
-                "src": "Lt7-gtBEAWA"
+                "src": "Lt7-gtBEAWA",
+                "resolution": "sddefault"
             }
         ]
     },
@@ -923,7 +976,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "oN0UODZbwCs"
+                "src": "oN0UODZbwCs",
+                "resolution": "hqdefault"
             }
         ]
     },
@@ -936,7 +990,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "W3zD9sgY5oc"
+                "src": "W3zD9sgY5oc",
+                "resolution": "hqdefault"
             }
         ]
     },
@@ -963,11 +1018,13 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "mxnEZI9Ee8o"
+                "src": "mxnEZI9Ee8o",
+                "resolution": "sddefault"
             },
             {
                 "type": "youtube",
-                "src": "lTfmjYtJoW8"
+                "src": "lTfmjYtJoW8",
+                "resolution": "sddefault"
             }
         ]
     },
@@ -981,11 +1038,13 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "4FBSreFa46I"
+                "src": "4FBSreFa46I",
+                "resolution": "hqdefault"
             },
             {
                 "type": "youtube",
-                "src": "y2G5VS_7uiw"
+                "src": "y2G5VS_7uiw",
+                "resolution": "hqdefault"
             }
         ]
     },
@@ -999,7 +1058,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "HhGtIht6yFQ"
+                "src": "HhGtIht6yFQ",
+                "resolution": "hqdefault"
             }
         ]
     },
@@ -1013,7 +1073,8 @@
         "media": [
             {
                 "type": "youtube",
-                "src": "oElxXAzvEYs"
+                "src": "oElxXAzvEYs",
+                "resolution": "hqdefault"
             }
         ]
     }

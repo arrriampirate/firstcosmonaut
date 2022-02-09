@@ -10,15 +10,16 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>{{ meta.title }}</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/test.png">
     <meta name="description" content="{{ meta.description }}"/>
     <style>
       {{ css | cssmin | safe }}
     </style>
   </head>
   <body>
-    <header>
+    <!--<header>
       Head
-    </header>
+    </header>-->
     <main>
       {{ content | safe }}
     </main>

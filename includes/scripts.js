@@ -4,6 +4,7 @@ const modalClose = document.querySelector('#modal-close')
 const youtubeFrame = document.querySelector('#youtube')
 
 let position = null
+let currentTarget = null
 
 window.addEventListener('keyup', (event) => {
     if (event.key === 'Escape') {
@@ -13,16 +14,22 @@ window.addEventListener('keyup', (event) => {
 
 window.addEventListener('click', (event) => {
     const action = event.target.dataset.action
+    const target = event.target
+
+    if (action === 'open-video') {
+        currentTarget = target
+        openVideoModal(target)
+    }
 
     if (action === 'open-modal') {
         position = event.target.getBoundingClientRect()
-        openModal(event.target.dataset.src, event.target.dataset.youtube)
+        // openModal(event.target.dataset.src, event.target.dataset.youtube)
     }
 
-    console.log('click', action)
+    console.log('click', event.target, action)
 
     if (action === 'close-modal') {
-        closeModal()
+        // closeModal()
     }
 })
 
@@ -102,7 +109,27 @@ function setImagePosition(src) {
 }
 
 
-function setYoutubeFrame(youtube) {
-    youtubeFrame.classList.add('visible')
-    youtubeFrame.src = `https://www.youtube.com/embed/${youtube}?controls=2&rel=0&autoplay=1&controls=0`
+function openVideoModal() {
+    lockBody()
+
+    currentTarget.classList.add('active')
+    const canvas = currentTarget.querySelector('.video-canvas')
+    const youtube = canvas.querySelector('.video-youtube')
+    const code = currentTarget.dataset.youtube
+
+    position = canvas.getBoundingClientRect()
+    canvas.style.left = `-${position.left}px`
+    canvas.style.top = `-${position.top}px`
+    canvas.style.width = `100vw`
+    canvas.style.height = `100vh`
+
+    youtube.src = `https://www.youtube.com/embed/${code}?controls=2&rel=0&autoplay=1&controls=0`
+}
+
+function lockBody() {
+    document.body.classList.add('fixed')
+}
+
+function unlockBody() {
+    document.body.classList.remove('fixed')
 }
