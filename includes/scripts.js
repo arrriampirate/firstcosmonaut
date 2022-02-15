@@ -6,12 +6,6 @@ const youtubeFrame = document.querySelector('#youtube')
 let position = null
 let currentTarget = null
 
-window.addEventListener('keyup', (event) => {
-    if (event.key === 'Escape') {
-        closeModal()
-    }
-})
-
 window.addEventListener('click', (event) => {
     const action = event.target.dataset.action
     const target = event.target
@@ -108,22 +102,48 @@ function setImagePosition(src) {
     image.src = src
 }
 
-
 function openVideoModal() {
     lockBody()
 
     currentTarget.classList.add('active')
     const canvas = currentTarget.querySelector('.video-canvas')
+    const closeButton = canvas.querySelector('.video-close')
     const youtube = canvas.querySelector('.video-youtube')
     const code = currentTarget.dataset.youtube
 
-    position = canvas.getBoundingClientRect()
-    canvas.style.left = `-${position.left}px`
-    canvas.style.top = `-${position.top}px`
-    canvas.style.width = `100vw`
-    canvas.style.height = `100vh`
+    function resize() {
+        position = currentTarget.getBoundingClientRect()
+        canvas.style.left = `-${position.left}px`
+        canvas.style.top = `-${position.top}px`
+        canvas.style.width = `100vw`
+        canvas.style.height = `100vh`
+    }
 
+    resize()
+    
     youtube.src = `https://www.youtube.com/embed/${code}?controls=2&rel=0&autoplay=1&controls=0`
+
+    function close() {
+        unlockBody()
+
+        currentTarget.classList.remove('active')
+        canvas.style = ''
+        youtube.src = ''
+
+        closeButton.removeEventListener('click', close)
+        window.removeEventListener('keyup', keyUpClose)
+        window.removeEventListener('resize', resize)
+    }
+
+    function keyUpClose(event) {
+        if (event.key === 'Escape') {
+            close()
+        }
+    }
+
+    closeButton.addEventListener('click', close)
+    window.addEventListener('keyup', keyUpClose)
+    window.addEventListener('resize', resize)
 }
 
 function lockBody() {

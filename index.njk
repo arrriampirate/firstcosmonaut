@@ -6,6 +6,8 @@ layout: base.njk
     <iframe src="//coub.com/embed/100193?muted=false&autostart=false&originalSize=false&startWithHD=false" allowfullscreen frameborder="0" width="1439" height="717" allow="autoplay"></iframe>
 </div>
 -->
+
+
 <div class="lead">
     <div class="logo">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1661 1626">
@@ -14,11 +16,12 @@ layout: base.njk
     </div>
     <h1>Первый космонавт</h1>
     <h2>Барнаул</h2>
-    <h3>2010 — <span class="lead-infinite">∞</span></h3>
-    <!--<ul>
-        <li>2010</li>
-        <li><span class="lead-infinite">∞</span></li>
-    </ul>-->
+
+    <div class="timeline">
+        <div class="timeline-year">2010</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">∞</div>
+    </div>
 </div>
 
 <div class="title">
@@ -58,6 +61,7 @@ layout: base.njk
                         {% if media.type == 'youtube' %}
                             <div class="video" data-action="open-video" data-youtube="{{ media.src }}">
                                 <div class="video-canvas">
+                                    <button class="video-close"><i></i></button>
                                     <iframe class="video-youtube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="video-play"></div>
                                     <img loading="lazy" class="video-image" src="https://img.youtube.com/vi/{{ media.src }}/{{ media.resolution }}.jpg" alt=""/>
