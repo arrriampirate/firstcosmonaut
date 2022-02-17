@@ -113,15 +113,17 @@ function openVideoModal() {
 
     function resize() {
         position = currentTarget.getBoundingClientRect()
-        canvas.style.left = `-${position.left}px`
-        canvas.style.top = `-${position.top}px`
+
+        console.log('position', position, position.top)
+        canvas.style.left = `${position.left * -1}px`
+        canvas.style.top = `${position.top * -1}px`
         canvas.style.width = `100vw`
         canvas.style.height = `100vh`
     }
 
     resize()
     
-    youtube.src = `https://www.youtube.com/embed/${code}?controls=2&rel=0&autoplay=1&controls=0`
+    youtube.src = `https://www.youtube.com/embed/${code}?controls=2&rel=0&autoplay=1&controls=0&fs=0&modestbranding=1&showinfo=0&iv_load_policy=3`
 
     function close() {
         unlockBody()
@@ -153,3 +155,13 @@ function lockBody() {
 function unlockBody() {
     document.body.classList.remove('fixed')
 }
+
+///////////////// Windows Scroll
+const timeline = document.querySelector('.timeline')
+
+function scroll() {
+    timeline.classList.toggle('active', window.pageYOffset > window.innerHeight)
+}
+
+scroll()
+window.addEventListener('scroll', scroll)
