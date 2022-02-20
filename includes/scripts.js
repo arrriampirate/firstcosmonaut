@@ -122,12 +122,15 @@ function openVideoModal() {
     }
 
     resize()
-    
-    youtube.src = `https://www.youtube.com/embed/${code}?controls=2&rel=0&autoplay=1&controls=0&fs=0&modestbranding=1&showinfo=0&iv_load_policy=3`
+
+    const youtubeTimeout = window.setTimeout(() => {
+        youtube.src = `https://www.youtube.com/embed/${code}?controls=2&rel=0&autoplay=1&controls=0&fs=0&modestbranding=1&showinfo=0&iv_load_policy=3`
+    }, 300)
 
     function close() {
         unlockBody()
 
+        clearTimeout(youtubeTimeout)
         currentTarget.classList.remove('active')
         canvas.style = ''
         youtube.src = ''

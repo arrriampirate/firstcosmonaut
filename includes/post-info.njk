@@ -1,0 +1,10 @@
+<div class="post-title">{{ post.title }}</div>
+{% if post.league %}
+    <div class="post-league">{{ league.name }}</div>
+{% endif %}
+{% if post.date %}
+    <time class="post-date" datetime="">{{ post.date | htmlDateString }}</time>
+{% endif %}
+{% if post.text %}
+    <div class="post-text">{{ post.text }}</div>
+{% endif %}

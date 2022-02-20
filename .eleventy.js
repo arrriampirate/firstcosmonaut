@@ -1,6 +1,6 @@
 const CleanCSS = require('clean-css')
 const htmlmin = require('html-minifier')
-const { minify } = require('terser');
+const { minify } = require('terser')
 
 module.exports = function(eleventyConfig) {
 
