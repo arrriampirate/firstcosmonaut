@@ -1,53 +1,27 @@
 ---
 layout: base.njk
 ---
-<!--
-<div class="cover">
-    <iframe src="//coub.com/embed/100193?muted=false&autostart=false&originalSize=false&startWithHD=false" allowfullscreen frameborder="0" width="1439" height="717" allow="autoplay"></iframe>
-</div>
--->
-
 {% include 'lead.njk' %}
-
-<div class="title">
-    <img src="/images/rocket.png" alt=""/>
-</div>
 
 <div class="posts">
     {% for post in posts %}
-        
-        {% if post.isYear %}
+        {% set league = leagues[post.league] %}
 
-            <div class="year">
-                {{ post.isYear }}
+        <div class="post">
+            <div class="post-info">
+                {% include 'post-info.njk' %}
             </div>
-
-        {% else %}
-            {% set league = leagues[post.league] %}
-
-            <div
-                class="post"
-                data-league="{{ post.league }}"
-            >
-                <div class="post-info">
-                    {% include 'post-info.njk' %}
-                </div>
-                <div class="post-content">
-                    {% for media in post.media %}
-                        {% if media.type == 'youtube' %}
-                            {% include 'post-youtube.njk' %}
-                        {% elif media.type == 'image' %}
-                            <img loading="lazy" class="post-image single-image" src="{{ media.src }}" alt="" data-action="open-modal" data-src="{{ media.src }}"/>
-                        {% elif media.type == 'text' %}
-                            <div class="text">{{ media.src }}</div>
-                        {% endif %}
-                    {% endfor %}
-                </div>
+            <div class="post-content">
+                {% for media in post.media %}
+                    {% if media.type == 'youtube' %}
+                        {% include 'post-youtube.njk' %}
+                    {% elif media.type == 'image' %}
+                        <img loading="lazy" class="post-image" src="{{ media.src }}" alt=""/>
+                    {% elif media.type == 'text' %}
+                        <div class="text">{{ media.src }}</div>
+                    {% endif %}
+                {% endfor %}
             </div>
-        {% endif %}
-
+        </div>
     {% endfor %}
 </div>
-<div class="overlay" id="overlay" data-action="close-modal"></div>
-<div class="modal-close" id="modal-close" data-action="close-modal"></div>
-<div class="modal" id="modal"></div>

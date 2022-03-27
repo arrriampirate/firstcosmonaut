@@ -1,4 +1,3 @@
-
 .lead {
     z-index: 20;
     position: sticky;
@@ -11,24 +10,38 @@
 
     color: #1a1919;
     font-family: var(--road-font);
-
-    box-shadow: inset 0 -10px 30px rgb(0 0 0 / 10%);
-    background: linear-gradient(0,#23d5ab, #23a6d5);
+ 
+    /*background: linear-gradient(0,#23d5ab, #23a6d5);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(0deg, #ee4036, #faae40);*/
+    background: linear-gradient(0deg, #ee7752, #cd1b60);
+    overflow: hidden;
     /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;*/
     /*animation: gradient 25s ease infinite;*/
     /*background: #ee7752 url('/images/rocket.png');*/
 }
 
+@keyframes myRocketsUp {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(900vw, -900vh);
+    }
+}
+
 .lead::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/images/rocket_green.png');
-    background-size: 64px;
+    right: 0;
+    width: 1000%;
+    height: 1000%;
+    background-image: url('/images/rocket_orange.png');
+    background-size: 60px;
+    opacity: .6;
+    animation: myRocketsUp 180s linear infinite;
 }
 
 .lead-content {
@@ -62,7 +75,6 @@ h3 {
     top: 4px;
     font-size: 24px;
 }
-
 
 /* Timeline */
 .timeline {
@@ -105,108 +117,6 @@ h3 {
     width: 100%;
 }
 
-.lead {
-    z-index: 20;
-    position: sticky;
-    top: calc(-100vh + 36px);
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    color: #1a1919;
-    font-family: var(--road-font);
-
-    box-shadow: inset 0 -10px 30px rgb(0 0 0 / 10%);
-    background: linear-gradient(0,#23d5ab, #23a6d5);
-    /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;*/
-    /*animation: gradient 25s ease infinite;*/
-    /*background: #ee7752 url('/images/rocket.png');*/
-}
-
-.lead::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/images/rocket_green.png');
-    background-size: 64px;
-}
-
-.lead-content {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-h1 {
-    padding-bottom: 12px;
-}
-
-h3 {
-    position: absolute;
-    bottom: 24px;
-    padding-top: 48px;
-    font-size: 18px;
-}
-
-.logo {
-    width: 180px;
-    height: 180px;
-    margin-bottom: 48px;
-}
-
-.lead-infinite {
-    position: relative;
-    top: 4px;
-    font-size: 24px;
-}
-
-
-/* Timeline */
-.timeline {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 36px;
-    font-weight: 600;
-    font-size: 20px;
-    font-family: var(--road-font);
-    letter-spacing: 0.4px;
-}
-
-.timeline-year {
-    flex-shrink: 0;
-    margin: 0 12px;
-}
-
-.timeline-dot {
-    position: relative;
-    width: 20px;
-    margin: -1px 0 0;
-    transition: all 0.4s ease;
-}
-
-.timeline-dot::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 2px;
-    background: #000;
-}
-
-.timeline.active .timeline-dot {
-    width: 100%;
+.timeline-inf {
+    font-family: "PT Sans Caption";
 }

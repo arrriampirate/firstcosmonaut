@@ -138,8 +138,12 @@
     width: 50px;
     height: 50px;;
     border-radius: 50%;
-    background: blue;
+    background: #222935;
     pointer-events: none;
+}
+
+.video-close:hover i {
+    background: #cd1b60;
 }
 
 /* video.active */
