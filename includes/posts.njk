@@ -1,15 +1,25 @@
----
-posts: posts
----
 <div class="posts">
     {% for post in posts %}
+        {% set league = leagues[post.league] %}
 
-        <div class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-            <a href="{{ post.url | url }}" class="postlist-link">
-                {{ post.title }}
-            </a>
-            <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        <div class="post">
+            <div class="post-year">
+                {{ post.date | htmlYearString }}
+            </div>
+            <div class="post-info">
+                {% include 'post-info.njk' %}
+            </div>
+            <div class="post-content">
+                {% for media in post.media %}
+                    {% if media.type == 'youtube' %}
+                        {% include 'post-youtube.njk' %}
+                    {% elif media.type == 'image' %}
+                        <img loading="lazy" class="post-image" src="{{ media.src }}" alt=""/>
+                    {% elif media.type == 'text' %}
+                        <div class="text">{{ media.src }}</div>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
-
     {% endfor %}
-</ol>
+</div>

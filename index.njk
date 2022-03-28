@@ -2,26 +2,4 @@
 layout: base.njk
 ---
 {% include 'lead.njk' %}
-
-<div class="posts">
-    {% for post in posts %}
-        {% set league = leagues[post.league] %}
-
-        <div class="post">
-            <div class="post-info">
-                {% include 'post-info.njk' %}
-            </div>
-            <div class="post-content">
-                {% for media in post.media %}
-                    {% if media.type == 'youtube' %}
-                        {% include 'post-youtube.njk' %}
-                    {% elif media.type == 'image' %}
-                        <img loading="lazy" class="post-image" src="{{ media.src }}" alt=""/>
-                    {% elif media.type == 'text' %}
-                        <div class="text">{{ media.src }}</div>
-                    {% endif %}
-                {% endfor %}
-            </div>
-        </div>
-    {% endfor %}
-</div>
+{% include 'posts.njk' %}

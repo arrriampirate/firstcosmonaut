@@ -75,5 +75,5 @@ function scroll() {
     timeline.classList.toggle('active', window.pageYOffset > window.innerHeight)
 }
 
-scroll()
-window.addEventListener('scroll', scroll)
+// scroll()
+// window.addEventListener('scroll', scroll)

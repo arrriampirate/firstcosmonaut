@@ -8,14 +8,18 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('images')
 	eleventyConfig.addPassthroughCopy('css')
 
-	// https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+	// Format Date
 	eleventyConfig.addFilter('htmlDateString', (date) => {
 		return new Intl.DateTimeFormat('ru-RU', {
-			year: 'numeric',
 			month: 'long',
 			day: 'numeric',
 			timeZone: 'UTC'
 		  }).format(new Date(date))
+	})
+
+	// Get year from Date
+	eleventyConfig.addFilter('htmlYearString', (date) => {
+		return (new Date(date)).getFullYear()
 	})
 
 	// Inline minified JS
