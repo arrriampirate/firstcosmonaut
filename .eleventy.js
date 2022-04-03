@@ -13,7 +13,8 @@ module.exports = function(eleventyConfig) {
 		return new Intl.DateTimeFormat('ru-RU', {
 			month: 'long',
 			day: 'numeric',
-			timeZone: 'UTC'
+			timeZone: 'UTC',
+			year: 'numeric'
 		  }).format(new Date(date))
 	})
 

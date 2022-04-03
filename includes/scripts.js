@@ -9,9 +9,14 @@ window.addEventListener('click', (event) => {
         currentTarget = target
         openVideoModal(target)
     }
+
+    if (action === 'scroll-to-year') {
+        currentTarget = target
+        scrollToYear(target)
+    }
 })
 
-function openVideoModal() {
+const openVideoModal = () => {
     lockBody()
 
     currentTarget.classList.add('active')
@@ -60,20 +65,62 @@ function openVideoModal() {
     window.addEventListener('resize', resize)
 }
 
-function lockBody() {
+const lockBody = () => {
     document.body.classList.add('fixed')
 }
 
-function unlockBody() {
+const unlockBody = () => {
     document.body.classList.remove('fixed')
+}
+
+////////// Timeline
+const scrollToYear = (target) => {
+    const value = target.dataset.value
+    const year = document.querySelector(`[data-year="${value}"]`)
+
+    window.scrollTo({
+        left: year.offsetLeft,
+        behavior: 'smooth',
+    })
 }
 
 ///////////////// Windows Scroll
 const timeline = document.querySelector('.timeline')
+const timelineItems = Array.from(timeline.querySelectorAll('.timeline-item'))
+const years = Array.from(document.querySelectorAll('.year'))
+let currentYearIndex = 0
+let offsets = []
+let reversedOffsets = []
 
-function scroll() {
-    timeline.classList.toggle('active', window.pageYOffset > window.innerHeight)
+const calcYearsOffsets = () => {
+    offsets = years.map((year, index) => !index ? 0 : year.offsetLeft)
+    reversedOffsets = offsets.reverse()
 }
 
-// scroll()
-// window.addEventListener('scroll', scroll)
+const scroll = () => {
+    offsets.find((offset, index) => {
+        if (window.scrollX >= offset) {
+            const newYearIndex = offsets.length - 1 - index
+            if (newYearIndex !== currentYearIndex) {
+                currentYearIndex = newYearIndex
+                highlightTimelineYear()
+            }
+            return true
+        }
+        return false
+    })
+}
+
+const highlightTimelineYear = () => {
+    timelineItems.forEach((item, index) => {
+        index === currentYearIndex
+            ? item.classList.add('active')
+            : item.classList.remove('active')
+    })
+}
+
+calcYearsOffsets()
+scroll()
+highlightTimelineYear()
+window.addEventListener('scroll', scroll)
+window.addEventListener('resize', calcYearsOffsets)

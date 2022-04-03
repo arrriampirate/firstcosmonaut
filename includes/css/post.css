@@ -1,42 +1,21 @@
 .post {
+    margin: 0 20px;
+}
+
+.post-content {
     display: flex;
-    justify-content: center;
-    padding: 72px 0;
 }
 
-.post-info {
-    flex-shrink: 0;
-    width: 140px;
-    margin-right: 48px;
-}
-
-.post-year {
-    flex-shrink: 0;
-    margin-right: 48px;
-    font-weight: 900;
-    font-size: 30px;
-    font-family: var(--road-font);
-}
-
-.post-title,
-.post-league,
-.post-date {
-    font-size: 16px;
-    text-transform: lowercase;
-}
-
-.post-title {
-    font-weight: 600;
-}
-
-.post-date {
-    display: block;
-    padding-top: 6px;
-    font-size: 12px;
+.post-footer {
+    margin-top: 12px;
+    color: #231F20;
+    font: 14px/1.2 var(--road-font);
+    letter-spacing: 0.05em;
 }
 
 .post-image {
     width: 100%;
+    max-height: 432px;
     vertical-align: top;
     object-fit: cover;
 }
@@ -45,10 +24,7 @@
     max-width: 410px;
     margin-top: -6px;
     font-family: "PT Serif Caption", serif;
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 600;
 }
 
-.post-content {
-    width: 640px;
-}

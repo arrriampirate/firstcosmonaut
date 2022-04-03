@@ -37,9 +37,62 @@
 }
 
 body {
-    font-family: var(--sans-font);
+    font-family: var(--road-font);
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 .fixed {
     overflow: hidden;
+}
+
+.main {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    align-items: center;
+    background: linear-gradient(90deg, #faaf40, #bf413a);
+}
+
+.block {
+    flex-shrink: 0;
+}
+
+.year {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    width: 290px;
+    margin-left: 96px;
+    font-weight: 900;
+    font-size: 300px;
+    pointer-events: none;
+}
+
+.timeline {
+    position: fixed;
+    display: flex;
+    bottom: 20px;
+    left: 40px;
+}
+
+.timeline-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.timeline-item {
+    color: #231f20;
+    font: 12px/1.2 var(--road-font);
+    letter-spacing: 0.05em;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    opacity: 0.4;
+    transition: opacity 0.1s ease;
+    cursor: pointer;
+}
+
+.timeline-item.active {
+    opacity: 1;
 }
