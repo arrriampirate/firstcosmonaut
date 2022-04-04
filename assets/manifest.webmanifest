@@ -1,0 +1,15 @@
+{
+  "name": "Первый космонавт",
+  "short_name": "Первый космонавт",
+  "lang": "ru-RU",
+  "start_url": "https://firstcosmonaut.com",
+  "display": "standalone",
+  "background_color": "#1e1e1e",
+  "theme_color": "#1e1e1e",
+  "orientation": "portrait-primary",
+  "description": "Команда КВН Первый космонавт, Барнаул",
+  "icons": [
+    { "src": "/assets/favicons/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/assets/favicons/icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}

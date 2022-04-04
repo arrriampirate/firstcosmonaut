@@ -26,14 +26,13 @@
     background: rgba(0, 0, 0, 0.1);
 }
 
-.video-image {
+.video__image {
     width: 100%;
     height: 100%;
-    vertical-align: top;
     object-fit: cover;
 }
 
-.video-play {
+.video__play {
     position: absolute;
     z-index: 10;
     top: 50%;
@@ -49,7 +48,7 @@
     pointer-events: none;
 }
 
-.video-play::before {
+.video__play::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -62,13 +61,13 @@
     backface-visibility: hidden;
 }
 
-.video:hover .video-play {
+.video:hover .video__play {
     background-color: rgb(231, 28, 28);
     opacity: 1;
     transform: scale(1.1);
 }
 
-.video-canvas {
+.video__canvas {
     position: absolute;
     left: 0;
     top: 0;
@@ -79,11 +78,11 @@
     pointer-events: none;
 }
 
-.video:not(.active):active .video-canvas {
+.video:not(.__active):active .video__canvas {
     transform: scale(0.986);
 }
 
-.video-youtube {
+.video__youtube {
     position: absolute;
     top: 30px;
     left: 30px;
@@ -96,7 +95,7 @@
     opacity: 0;
 }
 
-.video-close {
+.video__close {
     position: absolute;
     z-index: 1;
     top: 0;
@@ -113,8 +112,8 @@
     visibility: hidden;
 }
 
-.video-close::before,
-.video-close::after {
+.video__close::before,
+.video__close::after {
     content: "";
     position: absolute;
     z-index: 1;
@@ -123,62 +122,63 @@
     top: 50%;
     left: 50%;
     margin: -1px 0 0 -15px;
-    background: #fff;
+    background: var(--bg-color);
     transform: rotate(45deg);
 }
 
-.video-close::after {
+.video__close::after {
     transform: rotate(-45deg);
 }
 
-.video-close i {
+.video__close i {
     position: absolute;
     top: 5px;
     right: 5px;
     width: 50px;
     height: 50px;;
     border-radius: 50%;
-    background: #222935;
+    background: #787878;
+    transition: all 0.1s ease;
     pointer-events: none;
 }
 
-.video-close:hover i {
-    background: #cd1b60;
+.video__close:hover i {
+    background: #fff;
 }
 
-/* video.active */
-.video.active {
+/* video.__active */
+.video.__active {
     z-index: 100;
     pointer-events: none;
 }
 
-.video.active .video-canvas {
+.video.__active .video__canvas {
     transition: all 0.1s cubic-bezier(0.42, 0, 1, 1);
 }
 
-.video.active .video-play,
-.video.active::before {
+.video.__active .video__play,
+.video.__active::before {
     visibility: hidden;
     opacity: 0;
 }
 
-.video.active .video-close,
-.video.active .video-youtube {
+.video.__active .video__close,
+.video.__active .video__youtube {
     visibility: visible;
     opacity: 1;
 }
 
-.video.active .video-image {
+.video.__active .video__image {
     transition: opacity 0.2s ease, transform 8s linear;
     opacity: 0;
 }
 
-.video.active .video-youtube {
+.video.__active .video__youtube {
     transition: all 0.6s ease;
     transform: none;
 }
 
-.video.active .video-close {
+.video.__active .video__close {
     transition: all 0.8s ease;
     transform: none;
 }

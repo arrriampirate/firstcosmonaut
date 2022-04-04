@@ -2,22 +2,26 @@
     margin: 0 20px;
 }
 
-.post-content {
+.post__content {
     display: flex;
 }
 
-.post-footer {
-    margin-top: 12px;
-    color: #231F20;
-    font: 14px/1.2 var(--road-font);
-    letter-spacing: 0.05em;
+.post__footer {
+    margin-top: 20px;
+    font-size: 14px;
 }
 
-.post-image {
+.post__icon {
+    position: relative;
+    top: 1px;
+    width: 8px;
+    height: 10px;
+    margin: 0 10px;
+}
+
+.image {
     width: 100%;
     max-height: 432px;
-    vertical-align: top;
-    object-fit: cover;
 }
 
 .text {

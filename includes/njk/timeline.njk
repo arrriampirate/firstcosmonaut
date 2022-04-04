@@ -5,7 +5,7 @@
         {% set prevYear = posts[loop.index0 - 1].date | htmlYearString %}
 
         {% if loop.first or currentYear != prevYear %}
-            <button class="timeline-item" data-action="scroll-to-year" data-value="{{ currentYear }}">
+            <button class="timeline__item" data-action="scroll-to-year" data-value="{{ currentYear }}">
               {{ currentYear }}
             </button>
         {% endif %}

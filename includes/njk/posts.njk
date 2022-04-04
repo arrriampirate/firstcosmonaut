@@ -5,33 +5,39 @@
 
     {% if loop.first or currentYear != prevYear %}
         <div class="block year" data-year="{{ currentYear }}">
-          {{ currentYear }}
+            <div class="year__value">
+                {{ currentYear }}
+            </div>
         </div>
     {% endif %}
 
     <div class="block post">
-        <div class="post-content">
+        <div class="post__content">
             {{ year }}
             {% for media in post.media %}
                 {% if media.type == 'youtube' %}
-                    {% include 'post-youtube.njk' %}
+                    {% include 'njk/post-youtube.njk' %}
                 {% elif media.type == 'image' %}
-                    <img loading="lazy" class="post-image" src="{{ media.src }}" alt=""/>
+                    <img loading="lazy" class="image" src="{{ media.src }}" alt=""/>
                 {% elif media.type == 'text' %}
                     <div class="text">{{ media.src }}</div>
                 {% endif %}
             {% endfor %}
         </div>
-        <div class="post-footer">
+        <div class="post__footer">
             {% if post.date %}
                 <time datetime="">{{ post.date | htmlDateString }}</time>
             {% endif %}
-            /
+            <svg xmlns="http://www.w3.org/2000/svg" class="post__icon">
+                <use href="#lightning"/>
+            </svg>
             {% if post.league %}
-                <span>{{ league.name }}</span>
+                {{ league.name }}
             {% endif %}
-            /
-            <span class="post-title">{{ post.title }}</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="post__icon">
+                <use href="#lightning"/>
+            </svg>
+            {{ post.title }}
         </div>
     </div>
 {% endfor %}

@@ -1,3 +1,8 @@
+const lockBody = () => document.body.classList.add('__fixed')
+const unlockBody = () => document.body.classList.remove('__fixed')
+const scrollToX = (left) => window.scrollTo({ left, behavior: 'smooth' })
+
+////////// Timeline
 let position = null
 let currentTarget = null
 
@@ -14,21 +19,23 @@ window.addEventListener('click', (event) => {
         currentTarget = target
         scrollToYear(target)
     }
+
+    if (action === 'scroll-forward') {
+        scrollForward()
+    }
 })
 
 const openVideoModal = () => {
     lockBody()
 
-    currentTarget.classList.add('active')
-    const canvas = currentTarget.querySelector('.video-canvas')
-    const closeButton = canvas.querySelector('.video-close')
-    const youtube = canvas.querySelector('.video-youtube')
+    currentTarget.classList.add('__active')
+    const canvas = currentTarget.querySelector('.video__canvas')
+    const closeButton = canvas.querySelector('.video__close')
+    const youtube = canvas.querySelector('.video__youtube')
     const code = currentTarget.dataset.youtube
 
     function resize() {
         position = currentTarget.getBoundingClientRect()
-
-        console.log('position', position, position.top)
         canvas.style.left = `${position.left * -1}px`
         canvas.style.top = `${position.top * -1}px`
         canvas.style.width = `100vw`
@@ -45,7 +52,7 @@ const openVideoModal = () => {
         unlockBody()
 
         clearTimeout(youtubeTimeout)
-        currentTarget.classList.remove('active')
+        currentTarget.classList.remove('__active')
         canvas.style = ''
         youtube.src = ''
 
@@ -65,28 +72,26 @@ const openVideoModal = () => {
     window.addEventListener('resize', resize)
 }
 
-const lockBody = () => {
-    document.body.classList.add('fixed')
-}
-
-const unlockBody = () => {
-    document.body.classList.remove('fixed')
-}
-
 ////////// Timeline
 const scrollToYear = (target) => {
-    const value = target.dataset.value
-    const year = document.querySelector(`[data-year="${value}"]`)
+    const year = document.querySelector(`[data-year="${target.dataset.value}"]`)
+    scrollToX(year.offsetLeft)
+}
 
-    window.scrollTo({
-        left: year.offsetLeft,
-        behavior: 'smooth',
-    })
+////////// Scroll Forward
+const scrollForward = () => {
+    scrollToX(window.scrollX + window.innerWidth)
+}
+
+const main = document.querySelector('.main')
+const arrow = document.querySelector('.arrow')
+const setActiveScrollForwardArrow = () => {
+    arrow.classList.toggle('__disabled', window.scrollX >= main.clientWidth - window.innerWidth - 100)
 }
 
 ///////////////// Windows Scroll
 const timeline = document.querySelector('.timeline')
-const timelineItems = Array.from(timeline.querySelectorAll('.timeline-item'))
+const timelineItems = Array.from(timeline.querySelectorAll('.timeline__item'))
 const years = Array.from(document.querySelectorAll('.year'))
 let currentYearIndex = 0
 let offsets = []
@@ -97,7 +102,7 @@ const calcYearsOffsets = () => {
     reversedOffsets = offsets.reverse()
 }
 
-const scroll = () => {
+const setActiveTimelineItem = () => {
     offsets.find((offset, index) => {
         if (window.scrollX >= offset) {
             const newYearIndex = offsets.length - 1 - index
@@ -111,11 +116,16 @@ const scroll = () => {
     })
 }
 
+const scroll = () => {
+    setActiveTimelineItem()
+    setActiveScrollForwardArrow()
+}
+
 const highlightTimelineYear = () => {
     timelineItems.forEach((item, index) => {
         index === currentYearIndex
-            ? item.classList.add('active')
-            : item.classList.remove('active')
+            ? item.classList.add('__active')
+            : item.classList.remove('__active')
     })
 }
 

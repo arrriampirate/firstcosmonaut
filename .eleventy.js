@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
 
 	// Copy the `img` and `css` folders to the output
 	eleventyConfig.addPassthroughCopy('images')
-	eleventyConfig.addPassthroughCopy('css')
+	eleventyConfig.addPassthroughCopy('assets')
 
 	// Format Date
 	eleventyConfig.addFilter('htmlDateString', (date) => {
