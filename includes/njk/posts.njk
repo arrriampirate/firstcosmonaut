@@ -19,8 +19,6 @@
                     {% include 'njk/post-youtube.njk' %}
                 {% elif media.type == 'image' %}
                     <img loading="lazy" class="image" src="{{ media.src }}" alt=""/>
-                {% elif media.type == 'text' %}
-                    <div class="text">{{ media.src }}</div>
                 {% endif %}
             {% endfor %}
         </div>
