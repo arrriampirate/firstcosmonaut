@@ -24,11 +24,11 @@
     left: 50%;
     width: 10px;
     height: 10px;
-    margin: -5px 0 0 -6px;
+    margin: -5px 0 0 -4px;
     border-top: 2px var(--bg-color) solid;
-    border-right: 2px var(--bg-color) solid;
+    border-left: 2px var(--bg-color) solid;
     box-sizing: border-box;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
 }
 
 .arrow:hover {

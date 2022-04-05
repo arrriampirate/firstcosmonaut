@@ -28,7 +28,7 @@
 :root {
     --road-font: "RoadRadio", "Arial Black", sans-serif;
 
-    --bg-color: #1e1e1e;
+    --bg-color: #181818;
 }
 
 * {
@@ -38,14 +38,10 @@
 }
 
 body {
-    overflow-y: hidden;
+    overflow: hidden;
     color: #fff;
     font-family: var(--road-font);
     letter-spacing: 0.05em;
-}
-
-body.__fixed {
-    overflow: hidden;
 }
 
 image {
@@ -54,9 +50,10 @@ image {
 
 .main {
     display: flex;
-    width: max-content;
-    height: 100%;
     align-items: center;
+    width: max-content;
+    height: 100vh;
+    padding: 120px 0;
     background: var(--bg-color);
 }
 

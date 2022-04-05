@@ -1,8 +1,7 @@
 .video {
     position: relative;
     cursor: pointer;
-    width: 600px;
-    height: 432px;
+    width: 700px;
     backface-visibility: hidden;
 }
 

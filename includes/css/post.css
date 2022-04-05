@@ -1,12 +1,17 @@
 .post {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     margin: 0 20px;
 }
 
 .post__content {
     display: flex;
+    height: calc(100% - 34px);
 }
 
 .post__footer {
+    flex-shrink: 0;
     margin-top: 20px;
     font-size: 14px;
 }
@@ -21,7 +26,7 @@
 
 .image {
     width: 100%;
-    max-height: 432px;
+    max-height: 100%;
 }
 
 .text {

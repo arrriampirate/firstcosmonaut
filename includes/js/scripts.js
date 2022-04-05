@@ -2,9 +2,25 @@ const lockBody = () => document.body.classList.add('__fixed')
 const unlockBody = () => document.body.classList.remove('__fixed')
 const scrollToX = (left) => window.scrollTo({ left, behavior: 'smooth' })
 
-////////// Timeline
+const debounce = (func, wait, immediate) => {
+    let timeout
+    return function() {
+        const context = this
+        const args = arguments
+        const later = function() {
+            timeout = null
+            if (!immediate) func.apply(context, args)
+        }
+        const callNow = immediate && !timeout
+        clearTimeout(timeout)
+        timeout = setTimeout(later, wait)
+        if (callNow) func.apply(context, args)
+    }
+}
+
 let position = null
 let currentTarget = null
+let isScrollLocked = false
 
 window.addEventListener('click', (event) => {
     const action = event.target.dataset.action
@@ -20,13 +36,14 @@ window.addEventListener('click', (event) => {
         scrollToYear(target)
     }
 
-    if (action === 'scroll-forward') {
-        scrollForward()
+    if (action === 'scroll-to-start') {
+        scrollToStart()
     }
 })
 
 const openVideoModal = () => {
     lockBody()
+    isScrollLocked = true
 
     currentTarget.classList.add('__active')
     const canvas = currentTarget.querySelector('.video__canvas')
@@ -50,6 +67,7 @@ const openVideoModal = () => {
 
     function close() {
         unlockBody()
+        isScrollLocked = false
 
         clearTimeout(youtubeTimeout)
         currentTarget.classList.remove('__active')
@@ -75,18 +93,18 @@ const openVideoModal = () => {
 ////////// Timeline
 const scrollToYear = (target) => {
     const year = document.querySelector(`[data-year="${target.dataset.value}"]`)
+    highlightTimelineYearByYear(target.dataset.value)
     scrollToX(year.offsetLeft)
 }
 
 ////////// Scroll Forward
-const scrollForward = () => {
-    scrollToX(window.scrollX + window.innerWidth)
+const scrollToStart = () => {
+    scrollToX(0)
 }
 
-const main = document.querySelector('.main')
 const arrow = document.querySelector('.arrow')
 const setActiveScrollForwardArrow = () => {
-    arrow.classList.toggle('__disabled', window.scrollX >= main.clientWidth - window.innerWidth - 100)
+    arrow.classList.toggle('__disabled', window.scrollX < 100)
 }
 
 ///////////////// Windows Scroll
@@ -129,8 +147,26 @@ const highlightTimelineYear = () => {
     })
 }
 
+const highlightTimelineYearByYear = (year) => {
+    timelineItems.forEach(item => {
+        item.dataset.value === year
+            ? item.classList.add('__active')
+            : item.classList.remove('__active')
+    })
+}
+
 calcYearsOffsets()
 scroll()
 highlightTimelineYear()
-window.addEventListener('scroll', scroll)
+window.addEventListener('scroll', debounce(scroll, 200))
 window.addEventListener('resize', calcYearsOffsets)
+
+window.addEventListener('wheel', (event) => {
+    if (isScrollLocked) {
+        return
+    }
+    const delta = Math.abs(event.deltaY) >= Math.abs(event.deltaX) ? event.deltaY : event.deltaX
+    window.scrollTo({
+        left: window.scrollX + delta
+    })
+})
