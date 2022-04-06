@@ -1,0 +1,13 @@
+.__mobile .main {
+    flex-direction: column;
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    padding: 0;
+    background: var(--bg-color);
+}
+
+.__mobile .block {
+    flex-shrink: unset;
+    width: 100%;
+}

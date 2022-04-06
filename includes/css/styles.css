@@ -44,19 +44,10 @@ body {
     letter-spacing: 0.05em;
 }
 
+body.__mobile {
+    overflow: visible;
+}
+
 image {
     vertical-align: top;
-}
-
-.main {
-    display: flex;
-    align-items: center;
-    width: max-content;
-    height: 100vh;
-    padding: 120px 0;
-    background: var(--bg-color);
-}
-
-.block {
-    flex-shrink: 0;
 }

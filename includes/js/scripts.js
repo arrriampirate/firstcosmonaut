@@ -21,6 +21,11 @@ const debounce = (func, wait, immediate) => {
 let position = null
 let currentTarget = null
 let isScrollLocked = false
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+
+if (isMobile) {
+    document.body.classList.add('__mobile')
+}
 
 window.addEventListener('click', (event) => {
     const action = event.target.dataset.action
@@ -161,12 +166,14 @@ highlightTimelineYear()
 window.addEventListener('scroll', debounce(scroll, 200))
 window.addEventListener('resize', calcYearsOffsets)
 
-window.addEventListener('wheel', (event) => {
-    if (isScrollLocked) {
-        return
-    }
-    const delta = Math.abs(event.deltaY) >= Math.abs(event.deltaX) ? event.deltaY : event.deltaX
-    window.scrollTo({
-        left: window.scrollX + delta
+if (!isMobile) {
+    window.addEventListener('wheel', (event) => {
+        if (isScrollLocked) {
+            return
+        }
+        const delta = Math.abs(event.deltaY) >= Math.abs(event.deltaX) ? event.deltaY : event.deltaX
+        window.scrollTo({
+            left: window.scrollX + delta
+        })
     })
-})
+}

@@ -1,0 +1,16 @@
+.__mobile .post {
+    height: auto;
+    margin: 0 0 48px;
+}
+
+.__mobile .post__content {
+    display: flex;
+    height: auto;
+    min-height: 200px;
+}
+
+.__mobile .post__footer {
+    padding: 0 24px;
+    font-size: 12px;
+    text-align: center;
+}
