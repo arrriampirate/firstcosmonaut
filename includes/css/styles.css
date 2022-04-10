@@ -42,6 +42,7 @@ body {
     color: #fff;
     font-family: var(--road-font);
     letter-spacing: 0.05em;
+    background: var(--bg-color);
 }
 
 body.__mobile {

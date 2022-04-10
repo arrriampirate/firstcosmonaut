@@ -12,8 +12,9 @@
 
 .post__footer {
     flex-shrink: 0;
-    margin-top: 20px;
+    margin-top: 16px;
     font-size: 14px;
+    line-height: 1.6;
 }
 
 .post__icon {

@@ -27,7 +27,9 @@ if (isMobile) {
     document.body.classList.add('__mobile')
 }
 
-window.addEventListener('click', (event) => {
+window.addEventListener('click', clickHandler)
+
+function clickHandler(event) {
     const action = event.target.dataset.action
     const target = event.target
 
@@ -44,7 +46,7 @@ window.addEventListener('click', (event) => {
     if (action === 'scroll-to-start') {
         scrollToStart()
     }
-})
+}
 
 const openVideoModal = () => {
     lockBody()
