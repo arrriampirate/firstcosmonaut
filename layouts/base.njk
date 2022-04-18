@@ -27,7 +27,7 @@
     <title>{{ meta.title }}</title>
     <link rel="icon" href="/assets/favicons/icon.ico" sizes="any"/>
     <link rel="icon" href="/assets/favicons/icon.svg" type="image/svg+xml"/>
-    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png"/><!-- 180×180 -->
+    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png"/>
     <link rel="manifest" href="/assets/manifest.webmanifest"/>
     <meta name="description" content="{{ meta.description }}"/>
     <style>
@@ -41,8 +41,10 @@
     <script defer>
       {{ js | jsmin | safe }}
     </script>
-    <svg id="lightning" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 8L2.51663 4.36261L0.120331 4.28894L5.57583 0L3.40959 3.08815L5.72438 3.0975L0 8Z" fill="currentColor"/>
-    </svg>
+    <div class="icons">
+      <svg id="lightning" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 8L2.51663 4.36261L0.120331 4.28894L5.57583 0L3.40959 3.08815L5.72438 3.0975L0 8Z" fill="currentColor"/>
+      </svg>
+    </div>
   </body>
 </html>

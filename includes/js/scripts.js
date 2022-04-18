@@ -1,6 +1,9 @@
 const lockBody = () => document.body.classList.add('__fixed')
 const unlockBody = () => document.body.classList.remove('__fixed')
-const scrollToX = (left) => window.scrollTo({ left, behavior: 'smooth' })
+const scrollToPosition = (offset) => {
+    const params = isMobile ? { top: offset } : { left: offset }
+    window.scrollTo({ ...params, behavior: 'smooth' })
+}
 
 const debounce = (func, wait, immediate) => {
     let timeout
@@ -27,7 +30,9 @@ if (isMobile) {
     document.body.classList.add('__mobile')
 }
 
-window.addEventListener('click', clickHandler)
+const clickEventName = isMobile ? 'touchend' : 'click'
+
+window.addEventListener(clickEventName, clickHandler)
 
 function clickHandler(event) {
     const action = event.target.dataset.action
@@ -81,7 +86,7 @@ const openVideoModal = () => {
         canvas.style = ''
         youtube.src = ''
 
-        closeButton.removeEventListener('click', close)
+        closeButton.removeEventListener(clickEventName, close)
         window.removeEventListener('keyup', keyUpClose)
         window.removeEventListener('resize', resize)
     }
@@ -92,7 +97,7 @@ const openVideoModal = () => {
         }
     }
 
-    closeButton.addEventListener('click', close)
+    closeButton.addEventListener(clickEventName, close)
     window.addEventListener('keyup', keyUpClose)
     window.addEventListener('resize', resize)
 }
@@ -101,12 +106,12 @@ const openVideoModal = () => {
 const scrollToYear = (target) => {
     const year = document.querySelector(`[data-year="${target.dataset.value}"]`)
     highlightTimelineYearByYear(target.dataset.value)
-    scrollToX(year.offsetLeft)
+    scrollToPosition(isMobile ? year.offsetTop : year.offsetLeft)
 }
 
 ////////// Scroll Forward
 const scrollToStart = () => {
-    scrollToX(0)
+    scrollToPosition(0)
 }
 
 const arrow = document.querySelector('.arrow')
@@ -123,13 +128,14 @@ let offsets = []
 let reversedOffsets = []
 
 const calcYearsOffsets = () => {
-    offsets = years.map((year, index) => !index ? 0 : year.offsetLeft)
+    offsets = years.map((year, index) => !index ? 0 : isMobile ? year.offsetTop : year.offsetLeft)
     reversedOffsets = offsets.reverse()
 }
 
 const setActiveTimelineItem = () => {
     offsets.find((offset, index) => {
-        if (window.scrollX >= offset) {
+        const scrollPosition = isMobile ? window.scrollY : window.scrollX
+        if (scrollPosition >= offset) {
             const newYearIndex = offsets.length - 1 - index
             if (newYearIndex !== currentYearIndex) {
                 currentYearIndex = newYearIndex

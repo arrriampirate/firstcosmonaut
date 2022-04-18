@@ -26,7 +26,7 @@ module.exports = function(eleventyConfig) {
 	// Inline minified JS
 	eleventyConfig.addNunjucksAsyncFilter('jsmin', async function (code, callback) {
 		try {
-			const minified = await minify(code);
+			const minified = await minify(code, { module: true });
 			callback(null, minified.code);
 		} catch (err) {
 			console.error("Terser error: ", err);

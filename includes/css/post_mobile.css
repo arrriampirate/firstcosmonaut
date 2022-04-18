@@ -5,11 +5,15 @@
 
 .__mobile .post__content {
     display: flex;
+    flex-direction: column;
     height: auto;
-    min-height: 200px;
 }
 
 .__mobile .post__footer {
     padding: 0 24px;
-    font-size: 12px;
+    font-size: 10px;
+}
+
+.__mobile .post__icon {
+    margin: 0 6px;
 }

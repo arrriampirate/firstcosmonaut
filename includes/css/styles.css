@@ -52,3 +52,7 @@ body.__mobile {
 image {
     vertical-align: top;
 }
+
+.icons {
+    display: none;
+}

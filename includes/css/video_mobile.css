@@ -1,4 +1,9 @@
 .__mobile .video {
     width: 100%;
+    height: calc(100vw / 1.8);
     margin: 0;
+}
+
+.__mobile .video + .video {
+    margin-top: 12px;
 }
