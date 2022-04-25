@@ -175,7 +175,7 @@ const highlightTimelineYearByYear = (year) => {
 calcYearsOffsets()
 scroll()
 highlightTimelineYear()
-window.addEventListener('scroll', debounce(scroll, 200))
+window.addEventListener('scroll', debounce(scroll, 100))
 window.addEventListener('resize', calcYearsOffsets)
 
 if (!isMobile) {
