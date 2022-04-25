@@ -39,8 +39,11 @@ function clickHandler(event) {
     const target = event.target
 
     if (action === 'open-video') {
-        currentTarget = target
-        openVideoModal(target)
+        if (!isMobile) {
+            event.preventDefault()
+            currentTarget = target
+            openVideoModal(target)
+        }
     }
 
     if (action === 'scroll-to-year') {
@@ -77,7 +80,8 @@ const openVideoModal = () => {
         youtube.src = `https://www.youtube.com/embed/${code}?controls=2&rel=0&autoplay=1&controls=0&fs=0&modestbranding=1&showinfo=0&iv_load_policy=3`
     }, 300)
 
-    function close() {
+    function close(event) {
+        event.preventDefault()
         unlockBody()
         isScrollLocked = false
 
@@ -187,5 +191,7 @@ if (!isMobile) {
 }
 
 window.addEventListener('load', () => {
-    document.body.classList.add('loaded')
+    setTimeout(() => {
+        document.body.classList.add('loaded')
+    }, isMobile ? 400 : 0)
 })

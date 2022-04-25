@@ -1,5 +1,7 @@
-<div
+<a
     class="video"
+    href="https://www.youtube.com/watch?v={{ media.src }}"
+    target="_blank"
     data-action="open-video"
     data-youtube="{{ media.src }}"
 >
@@ -9,4 +11,4 @@
         <div class="video__play"></div>
         <img loading="lazy" class="video__image" src="https://img.youtube.com/vi/{{ media.src }}/{{ media.resolution }}.jpg" alt=""/>
     </div>
-</div>
+</a>

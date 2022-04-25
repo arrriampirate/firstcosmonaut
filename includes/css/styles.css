@@ -61,13 +61,17 @@ image {
     opacity: 0;
     visibility: hidden;
     transform: translateX(40px);
-    transition: all 1s ease;
+}
+
+.__mobile .fade {
+    transform: translateY(40px);
 }
 
 .loaded .fade {
     opacity: 1;
     visibility: visible;
     transform: none;
+    transition: all 1s ease;
 }
 
 .fade.delay-1 {

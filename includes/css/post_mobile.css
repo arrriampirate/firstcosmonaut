@@ -1,4 +1,6 @@
 .__mobile .post {
+    position: relative;
+    z-index: 10;
     height: auto;
     margin: 0 0 48px;
 }
