@@ -5,13 +5,13 @@
 
     {% if loop.first or currentYear != prevYear %}
         <div class="block year" data-year="{{ currentYear }}">
-            <div class="year__value">
+            <div class="year__value fade delay-2">
                 {{ currentYear }}
             </div>
         </div>
     {% endif %}
 
-    <div class="block post">
+    <div class="block post fade delay-3">
         <div class="post__content">
             {{ year }}
             {% for media in post.media %}
