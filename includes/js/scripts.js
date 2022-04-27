@@ -158,9 +158,14 @@ const scroll = () => {
 
 const highlightTimelineYear = () => {
     timelineItems.forEach((item, index) => {
-        index === currentYearIndex
-            ? item.classList.add('__active')
-            : item.classList.remove('__active')
+        if (index === currentYearIndex) {
+            item.classList.add('__active')
+            item.scrollIntoView({
+                behavior: 'smooth',
+            })
+        } else {
+            item.classList.remove('__active')
+        }
     })
 }
 
