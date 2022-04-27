@@ -81,7 +81,9 @@ const openVideoModal = () => {
     }, 300)
 
     function close(event) {
-        event.preventDefault()
+        if (event && event.preventDefault) {
+            event.preventDefault()
+        }
         unlockBody()
         isScrollLocked = false
 
@@ -120,7 +122,8 @@ const scrollToStart = () => {
 
 const arrow = document.querySelector('.arrow')
 const setActiveScrollForwardArrow = () => {
-    arrow.classList.toggle('__disabled', window.scrollX < 100)
+    const offset = isMobile ? window.scrollY : window.scrollX
+    arrow.classList.toggle('__disabled', offset < 100)
 }
 
 ///////////////// Windows Scroll
@@ -198,5 +201,5 @@ if (!isMobile) {
 window.addEventListener('load', () => {
     setTimeout(() => {
         document.body.classList.add('loaded')
-    }, isMobile ? 400 : 0)
+    }, isMobile ? 500 : 0)
 })
