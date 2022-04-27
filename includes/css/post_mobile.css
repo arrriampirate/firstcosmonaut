@@ -19,3 +19,7 @@
 .__mobile .post__icon {
     margin: 0 6px;
 }
+
+.__mobile .image {
+    width: 100%;
+}
